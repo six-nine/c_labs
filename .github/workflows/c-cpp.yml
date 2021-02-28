@@ -15,5 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build and test
-      working-directory: ./Lab1
-      run: make
+      run: |
+        cd Lab1
+        make
