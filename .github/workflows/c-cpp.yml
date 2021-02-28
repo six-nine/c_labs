@@ -17,4 +17,4 @@ jobs:
     - name: build and test
       run: |
         cd Lab1
-        make
+        make 
