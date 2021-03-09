@@ -22,12 +22,14 @@ jobs:
   valgrind:
 
     runs-on: ubuntu-latest
-
+    
+    needs: build-lab1
+    
     steps:
     - uses: actions/checkout@v2
     - name: check memory
       run: |
-        apt install -y valgrind
+        sudo apt install -y valgrind
         valgrind ./bin/program/main
         100
 
