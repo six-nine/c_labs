@@ -18,3 +18,21 @@ jobs:
       run: |
         cd Lab1
         make 
+        
+  valgrind:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: check memory
+      run: |
+        valgrind ./bin/program/main
+        100
+
+
+
+
+
+
+
