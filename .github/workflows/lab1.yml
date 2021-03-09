@@ -19,8 +19,7 @@ jobs:
         cd Lab1
         make 
         sudo apt install -y valgrind
-        valgrind ./bin/program/main
-        100000
+        valgrind ./bin/tests/tests
         
 
 
