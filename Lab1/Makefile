@@ -1,4 +1,4 @@
-all: clean main tests run_tests
+all: clean main tests run_tests valgrind_check linter_check
 
 main:
 	mkdir -p bin/program
@@ -14,5 +14,13 @@ run:
 run_tests:
 	./bin/tests/tests
 
+valgrind_check:
+	mkdir -p bin/temp
+	echo 100000 > bin/temp/input.txt
+	valgrind ./bin/program/main < bin/temp/input.txt
+
+linter_check:
+	cpplint *.c
+
 clean: 
-	rm -rf bin
+	rm -rf bin/
