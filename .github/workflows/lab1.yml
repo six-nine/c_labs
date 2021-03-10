@@ -13,12 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: clone repo
+      uses: actions/checkout@v2
     
     - name: install valgrind and cpplint
       run: |
         sudo apt install -y valgrind
-        pip install cpplint
+        sudo pip install cpplint
     
     - name: build and test
       run: |
