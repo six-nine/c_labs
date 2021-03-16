@@ -23,7 +23,7 @@ jobs:
     
     - name: build and test
       run: |
-        for directory in */ ; do
-          cd "$directory"
+        for d in */ ; do
+          cd "$d"
           make
           cd ..
