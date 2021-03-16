@@ -23,6 +23,7 @@ jobs:
     
     - name: build and test
       run: |
+        git diff --name-only HEAD^ HEAD
         git diff --name-only HEAD^ HEAD > files.txt
         for directory in */ ; do
           while read file 
