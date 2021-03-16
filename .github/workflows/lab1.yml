@@ -23,17 +23,7 @@ jobs:
     
     - name: build and test
       run: |
-        git diff --name-only HEAD^ HEAD
-        git diff --name-only HEAD^ HEAD > files.txt
         for directory in */ ; do
-          while read file 
-          do
-            if [[ $file == $directory/* ]]; then
-              cd "$directory"
-              make
-              cd ..
-              break
-            fi
-          done < files.txt
-        done
-        rm -rf files.txt
+          cd "$directory"
+          make
+          cd ..
