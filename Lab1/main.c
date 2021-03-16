@@ -38,6 +38,7 @@ int main() {
     }
   }
   printf("\n");
+  // some comment to test actions
 
   return 0;
 }
