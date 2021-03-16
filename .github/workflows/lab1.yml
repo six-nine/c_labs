@@ -27,3 +27,4 @@ jobs:
           cd "$d"
           make
           cd ..
+          done
