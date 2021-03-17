@@ -1,8 +1,11 @@
 #include "main.h"
 
-#include <math.h>
 #include <stdio.h>
 #include <string.h>
+
+#ifndef M_PI
+#define M_PI 3.141592
+#endif
 
 void print_menu() {
   printf(
