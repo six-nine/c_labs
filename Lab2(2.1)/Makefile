@@ -16,7 +16,7 @@ run_tests:
 
 valgrind_check:
 	mkdir -p bin/temp
-	echo 100000 > bin/temp/input.txt
+	echo "2\n 3\n 4\n 5\n 0\n 7\n" > bin/temp/input.txt
 	valgrind ./bin/program/main < bin/temp/input.txt
 
 linter_check:
