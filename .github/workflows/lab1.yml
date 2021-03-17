@@ -13,18 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: clone repo
+      uses: actions/checkout@v1
+    
+    - name: install valgrind and cpplint
+      run: |
+        sudo apt install -y valgrind
+        sudo pip install cpplint
+    
     - name: build and test
       run: |
-        cd Lab1
-        make 
-        sudo apt install -y valgrind
-        
-    - name: check with valgrind
-      run: |
-        rm -rf input.txt
-        echo 100000 > input.txt
-        valgrind ./bin/program/main < input.txt
-        rm -rf input.txt
-
-
+        for d in */ ; do
+          cd "$d"
+          make
+          cd ..
+          done
