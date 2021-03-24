@@ -1,0 +1,1 @@
+int restore_matrix(int **matrix, int n);
