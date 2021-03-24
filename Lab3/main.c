@@ -24,7 +24,6 @@ int restore_matrix(int **matrix, int n) {
   int m = n;
   int **rows, **cols;
   rows = allocate_matrix(n, 2);
-  // how many zeros there are in each row and column
   if (rows == NULL) {
     printf("Memory error");
     return 0;
