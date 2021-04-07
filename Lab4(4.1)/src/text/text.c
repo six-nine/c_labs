@@ -2,14 +2,14 @@
 
 int push_word(text *txt, char *word) {
   if (txt->first_word == NULL) {
-    txt->first_word = malloc(sizeof(word));
+    txt->first_word = (struct word *)malloc(sizeof(word));
     txt->last_word = txt->first_word;
     if (txt->first_word == NULL) {
       return 0;
     }
     txt->first_word->next = NULL;
   } else {
-    txt->last_word->next = malloc(sizeof(word));
+    txt->last_word->next = (struct word *)malloc(sizeof(word));
     if (txt->last_word->next == NULL) {
       return 0;
     }
