@@ -11,11 +11,8 @@ test:
 run:
 	./bin/program/main
 
-run_tests:
-	./bin/tests/tests
-
 valgrind_check:
-	valgrind ./bin/tests/tests
+	valgrind ./bin/program/main
 
 linter_check:
 	cpplint *.c
