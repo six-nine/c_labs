@@ -1,0 +1,8 @@
+In this test one sentence
+will be
+divided
+into
+six
+lines. Should we test question mark too?
+Cow! We tested single word sentence and
+saving of   t   a   b   u   l   a   t   i   o   n.
