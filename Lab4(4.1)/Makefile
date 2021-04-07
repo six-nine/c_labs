@@ -16,7 +16,7 @@ test:
 	diff -u out3.txt tests/ans3.txt
 
 valgrind_check:
-	valgrind --leak-check=full ./bin/program/main < "tests/test1.txt"
+	valgrind --leak-check=full -s ./bin/program/main < "tests/test1.txt"
 
 linter_check:
 	cpplint *.c

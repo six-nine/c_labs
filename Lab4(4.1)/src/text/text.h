@@ -1,8 +1,9 @@
 #ifndef TEXT_H
 #define TEXT_H
 
-#include "../string/str.h"
 #include <stdlib.h>
+
+#include "../string/str.h"
 
 typedef struct word {
   struct word *next;
@@ -10,7 +11,7 @@ typedef struct word {
 } word;
 
 typedef struct text {
-  word *first_word, *last_word;
+  struct word *first_word, *last_word;
 } text;
 
 int push_word(text *txt, char *word);
