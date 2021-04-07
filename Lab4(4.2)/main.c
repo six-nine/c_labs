@@ -7,7 +7,7 @@
 int main() {
   const unsigned int MAX_WORD_LENGTH = 128;
 
-  // ------- get dictionary ------ //
+  /* ------- get dictionary ------ */
   hash_table hash_t;
   if (!init_table(&hash_t)) {
     printf("Error while initialising hash table");
