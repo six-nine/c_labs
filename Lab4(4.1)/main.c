@@ -37,7 +37,11 @@ int main() {
           max_word_size = word_size;
           str_cpy(max_word, current_word);
         }
-        push_word(&txt, current_word);
+        if (!push_word(&txt, current_word)) {
+          printf("Memory error.");
+          destruct_text(&txt);
+          return 1;
+        }
         text_mask[mask_length++] = '@';
         text_mask[mask_length++] = in_str[i];
         /* clear word */
