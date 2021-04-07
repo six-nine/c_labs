@@ -22,9 +22,9 @@ int str_cmp(const char *s1, const char *s2) {
   return s1[i] - s2[j];
 }
 
-void str_cpy(char *s, const char *p){
+void str_cpy(char *s, const char *p) {
   int i = 0;
-  while (p[i] != '\0'){
+  while (p[i] != '\0') {
     s[i] = p[i];
     i++;
   }

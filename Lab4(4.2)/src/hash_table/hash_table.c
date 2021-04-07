@@ -29,7 +29,7 @@ int init_table(struct hash_table* hash_t) {
 int insert_to_hash_table(struct hash_table* hash_t, char* key, char* value) {
   unsigned long long index = hash(key, hash_t->MOD) % hash_t->capacity;
   if (hash_t->table[index].first_item == NULL) {
-    // first item with this hash
+    /* first item with this hash */
     hash_t->table[index].first_item = (list_item*)malloc(sizeof(list_item));
     hash_t->table[index].last_item = hash_t->table[index].first_item;
     if (hash_t->table[index].first_item == NULL) {
