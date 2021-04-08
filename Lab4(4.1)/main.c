@@ -6,10 +6,24 @@
 
 int main() {
   const unsigned int MAX_STR_LENGTH = 128;
-  char in_str[MAX_STR_LENGTH], text_mask[MAX_STR_LENGTH];
+  char *in_str, *text_mask;
   int mask_length = 0;
-  char min_word[MAX_STR_LENGTH], max_word[MAX_STR_LENGTH];
+  char *min_word, *max_word;
   int min_word_size = INT_MAX, max_word_size = 0;
+  in_str = malloc(MAX_STR_LENGTH * sizeof(char));
+  text_mask = malloc(MAX_STR_LENGTH * sizeof(char));
+  min_word = malloc(MAX_STR_LENGTH * sizeof(char));
+  max_word = malloc(MAX_STR_LENGTH * sizeof(char));
+
+  if (!in_str || !text_mask || !min_word || !max_word) {
+    if (in_str) free(in_str);
+    if (text_mask) free(text_mask);
+    if (min_word) free(min_word);
+    if (max_word) free(max_word);
+    printf("Error");
+    return 1;
+  }
+
   text txt;
   txt.first_word = NULL;
   txt.last_word = NULL;
@@ -77,7 +91,10 @@ int main() {
       }
     }
   }
-
+  free(in_str);
+  free(text_mask);
+  free(min_word);
+  free(max_word);
   destruct_text(&txt);
 
   return 0;
