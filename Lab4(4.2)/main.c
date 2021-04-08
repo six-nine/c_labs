@@ -7,7 +7,6 @@
 int main() {
   const unsigned int MAX_WORD_LENGTH = 128;
 
-  /* ------- get dictionary ------ */
   hash_table hash_t;
   if (!init_table(&hash_t)) {
     printf("Error while initialising hash table");
@@ -20,10 +19,24 @@ int main() {
     printf("Unable to open file");
     return 1;
   }
-  char key[MAX_WORD_LENGTH];
-  char value[MAX_WORD_LENGTH];
+  char *key;
+  char *value;
+  char *str;
+  key = malloc(sizeof(char) * MAX_WORD_LENGTH);
+  value = malloc(sizeof(char) * MAX_WORD_LENGTH);
+  str = malloc(sizeof(char) * MAX_WORD_LENGTH);
+  if (!key || !value || !str) {
+    printf("Error");
+    if (key) free(key);
+    if (value) free(value);
+    if (str) free(str);
+    return 1;
+  }
   while (fscanf(input, "%128s %128s", key, value) != EOF) {
     if (!insert_to_hash_table(&hash_t, key, value)) {
+      free(key);
+      free(value);
+      free(str);
       destruct_hash_table(&hash_t);
       fclose(input);
       printf("Error while adding element to hash table.");
@@ -35,11 +48,14 @@ int main() {
   input = fopen("tests/text.txt", "r");
   if (input == NULL) {
     printf("ERROR!!! Unable to open file");
+    free(key);
+    free(value);
+    free(str);
     destruct_hash_table(&hash_t);
     return 1;
   }
   FILE *output = fopen("result.txt", "w");
-  char c, str[MAX_WORD_LENGTH];
+  char c;
   int word_len = 0;
   while ((c = fgetc(input)) != EOF) {
     if (c == '\t' || c == '\n' || c == ' ') {
@@ -62,7 +78,11 @@ int main() {
     str[word_len] = '\0';
     fprintf(output, "%s", str);
   }
-
   destruct_hash_table(&hash_t);
+  free(key);
+  free(value);
+  free(str);
+  fclose(input);
+  fclose(output);
   return 0;
 }
