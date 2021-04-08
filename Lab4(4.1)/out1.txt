@@ -1,3 +1,5 @@
 is This some test text.
 All in are sentences their own lines.
 excellent think it should be I.
+Longest word contains 9 letters
+Shortest word contains 1 letters

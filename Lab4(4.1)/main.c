@@ -10,6 +10,8 @@ int main() {
   int mask_length = 0;
   char *min_word, *max_word;
   int min_word_size = INT_MAX, max_word_size = 0;
+  int shortest_word_size = INT_MAX;
+  int longest_word_size = 0;
   in_str = malloc(MAX_STR_LENGTH * sizeof(char));
   text_mask = malloc(MAX_STR_LENGTH * sizeof(char));
   min_word = malloc(MAX_STR_LENGTH * sizeof(char));
@@ -66,6 +68,12 @@ int main() {
       }
       if (in_str[i] == '.' || in_str[i] == '?' || in_str[i] == '!') {
         /* end of sentence */
+        if (max_word_size > longest_word_size) {
+          longest_word_size = max_word_size;
+        }
+        if (min_word_size < shortest_word_size) {
+          shortest_word_size = min_word_size;
+        }
         int i = 0;
         word *w = txt.first_word;
         for (i = 0; i < mask_length; i++) {
@@ -91,6 +99,8 @@ int main() {
       }
     }
   }
+  printf("\nLongest word contains %d letters\n", longest_word_size);
+  printf("Shortest word contains %d letters\n", shortest_word_size);
   free(in_str);
   free(text_mask);
   free(min_word);

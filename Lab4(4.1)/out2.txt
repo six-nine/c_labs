@@ -1,2 +1,4 @@
 This second is test. Here one
 is sentence divided into two lines.
+Longest word contains 8 letters
+Shortest word contains 2 letters

@@ -6,3 +6,5 @@ six
 lines. Should question test we mark too?
 Cow! We tested single word t and
 saving of   sentence   a   b   u   l   a   sentence   i   o   n.
+Longest word contains 8 letters
+Shortest word contains 1 letters
