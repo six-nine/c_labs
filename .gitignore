@@ -4,3 +4,7 @@
 files.txt
 
 script
+
+#clion files
+/*/CMakeLists.txt
+/*/cmake-build-debug
