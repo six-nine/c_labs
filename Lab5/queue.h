@@ -2,7 +2,7 @@
 #include <list>
 
 template<typename T>
-class queue{
+class queue {
  private:
   std::list<T> _list;
  public:
@@ -24,7 +24,7 @@ queue<T>::queue(queue &other) {
   _list = other._list;
 }
 template<typename T>
-queue<T>::~queue() { }
+queue<T>::~queue() {}
 template<typename T>
 void queue<T>::push(T data) {
   _list.push_back(data);

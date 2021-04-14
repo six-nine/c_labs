@@ -3,11 +3,11 @@
 #include "stack.h"
 #include "queue.h"
 
-struct query{
+struct query {
   size_t stack_number;
   char type;
   int data;
-  query(int stack_number, char type, int data){
+  query(int stack_number, char type, int data) {
     this->stack_number = stack_number;
     this->type = type;
     this->data = data;

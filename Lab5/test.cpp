@@ -1,7 +1,7 @@
 #include "process_stacks.h"
 #include <cassert>
 
-int main(){
+int main() {
   queue<query> test_q;
   test_q.push(query(5, 'A', 13));
   test_q.push(query(1, 'A', 45));

@@ -3,7 +3,7 @@
 #include <forward_list>
 
 template<typename T>
-class stack{
+class stack {
  private:
   std::forward_list<T> _list;
   size_t _size;
@@ -20,7 +20,7 @@ class stack{
 };
 
 template<typename T>
-stack<T>::stack() : _size(0){ }
+stack<T>::stack() : _size(0) {}
 
 template<typename T>
 stack<T>::stack(stack &other) {
@@ -47,7 +47,7 @@ template<typename T>
 void stack<T>::erase(T value) {
   _list.remove(value);
   _size = 0;
-  for (auto i: _list){
+  for (auto i: _list) {
     _size++;
   }
 }
@@ -56,6 +56,6 @@ T &stack<T>::top() {
   return _list.front();
 }
 template<typename T>
-size_t stack<T>::size(){
+size_t stack<T>::size() {
   return _size;
 }
