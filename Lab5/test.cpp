@@ -1,5 +1,5 @@
 #include "process_stacks.h"
-#include <iostream>
+#include <cassert>
 
 int main(){
   queue<query> test_q;
