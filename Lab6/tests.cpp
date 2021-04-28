@@ -37,4 +37,4 @@ int main() {
   assert(binary_search_tree<int>::compare_by_values(bst1, bst2) == 0);
   assert(binary_search_tree<int>::compare_by_structure(bst1, bst2) == 0);
   return 0;
-};
+}
