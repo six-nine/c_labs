@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstddef>  // size_t
 #include <utility>  // for pairs
 
 template <typename key_type, typename value_type = char>
