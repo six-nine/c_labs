@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 #include "applicant.h"
 #include "employer.h"
 #include "database_helper.h"
