@@ -11,7 +11,6 @@ int main(){
   assert(app2.to_csv() == "Kozlov,Vadim,Aleksandrovich,2002,0,0,1,23321jneknf,3,1000");
   employer amp1(app1);
   employer amp2("Kozlov,Vadim,Aleksandrovich,2002,0,0,1,23321jneknf,3,1000");
-  assert(amp1.suits(app2) == true);
 
   return 0;
 }
