@@ -46,7 +46,7 @@ class applicant {
   std::string _mobile_phone;
   university _university;
   city _city;
-  int _min_salary{};
+  int _min_salary;
  public:
   applicant(
       std::string first_name,

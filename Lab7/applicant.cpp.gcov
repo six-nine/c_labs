@@ -1,0 +1,692 @@
+        -:    0:Source:applicant.cpp
+        -:    0:Graph:applicant.gcno
+        -:    0:Data:applicant.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "applicant.h"
+function _ZN9applicantC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_iNS_6genderENS_14marital_statusENS_10universityES6_NS_4cityEi called 2 returned 100% blocks executed 40%
+function _ZN9applicantC1ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_iNS_6genderENS_14marital_statusENS_10universityES6_NS_4cityEi called 2 returned 100% blocks executed 100%
+        4:    2:applicant::applicant(std::string first_name,
+        2:    2-block  0
+unconditional  0 taken 2
+        2:    2-block  1
+branch  1 taken 2
+branch  2 taken 0
+        2:    2-block  2
+branch  3 taken 2
+branch  4 taken 0
+        2:    2-block  3
+branch  5 taken 2
+branch  6 taken 0
+        2:    2-block  4
+unconditional  7 taken 2
+        -:    3:                     std::string second_name,
+        -:    4:                     std::string third_name,
+        -:    5:                     int year_of_birth,
+        -:    6:                     applicant::gender gend,
+        -:    7:                     applicant::marital_status status,
+        -:    8:                     applicant::university univ,
+        -:    9:                     std::string mobile_phone,
+        -:   10:                     applicant::city city_,
+        2:   11:                     int min_salary) {
+        2:   12:  _first_name = first_name;
+        2:   12-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   13:  _second_name = second_name;
+        2:   13-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   14:  _third_name = third_name;
+        2:   14-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   15:  _year_of_birth = year_of_birth;
+        2:   16:  _gender = gend;
+        2:   17:  _marital_status = status;
+        2:   18:  _university = univ;
+        2:   19:  _mobile_phone = mobile_phone;
+        2:   19-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   20:  _city = city_;
+        2:   21:  _min_salary = min_salary;
+        4:   22:}
+        2:   22-block  0
+unconditional  0 taken 2
+    $$$$$:   22-block  1
+unconditional  1 never executed
+    $$$$$:   22-block  2
+unconditional  2 never executed
+    $$$$$:   22-block  3
+unconditional  3 never executed
+    $$$$$:   22-block  4
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   22-block  5
+unconditional  6 never executed
+    $$$$$:   22-block  6
+branch  7 never executed
+branch  8 never executed
+    $$$$$:   22-block  7
+unconditional  9 never executed
+    $$$$$:   22-block  8
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   22-block  9
+unconditional 12 never executed
+    $$$$$:   22-block 10
+branch 13 never executed
+branch 14 never executed
+    $$$$$:   22-block 11
+unconditional 15 never executed
+    $$$$$:   22-block 12
+    $$$$$:   22-block 13
+        2:   22-block 14
+unconditional 16 taken 2
+function _ZN9applicantC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE called 4 returned 100% blocks executed 55%
+function _ZN9applicantC1ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE called 4 returned 100% blocks executed 100%
+        8:   23:applicant::applicant(std::string csv) {
+        4:   23-block  0
+unconditional  0 taken 4
+        4:   23-block  1
+branch  1 taken 4
+branch  2 taken 0
+        4:   23-block  2
+branch  3 taken 4
+branch  4 taken 0
+        4:   23-block  3
+branch  5 taken 4
+branch  6 taken 0
+        4:   23-block  4
+unconditional  7 taken 4
+       36:   24:  std::string strs[9];
+        4:   24-block  0
+unconditional  0 taken 4
+       36:   24-block  1
+branch  1 taken 36
+branch  2 taken 0
+       36:   24-block  2
+branch  3 taken 32
+branch  4 taken 4
+    $$$$$:   24-block  3
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   24-block  4
+branch  7 never executed
+branch  8 never executed
+    $$$$$:   24-block  5
+branch  9 never executed
+branch 10 never executed
+    $$$$$:   24-block  6
+unconditional 11 never executed
+    $$$$$:   24-block  7
+        4:   25:  csv.push_back(',');
+        4:   25-block  0
+branch  0 taken 4
+branch  1 taken 0
+        4:   26:  int j = 0;
+       40:   27:  for (int i = 0; i < 9; i++) {
+        4:   27-block  0
+unconditional  0 taken 4
+       40:   27-block  1
+branch  1 taken 36
+branch  2 taken 4
+       36:   27-block  2
+unconditional  3 taken 36
+      212:   28:    while (j < csv.size() && csv[j] != ',') {
+       36:   28-block  0
+unconditional  0 taken 36
+      212:   28-block  1
+branch  1 taken 212
+branch  2 taken 0
+      212:   28-block  2
+unconditional  3 taken 212
+      212:   28-block  3
+branch  4 taken 176
+branch  5 taken 36
+      176:   28-block  4
+unconditional  6 taken 176
+      176:   29:      strs[i].push_back(csv[j]);
+      176:   29-block  0
+branch  0 taken 176
+branch  1 taken 0
+      176:   30:      j++;
+        -:   31:    }
+       36:   32:    j++;
+       36:   33:  }
+       36:   33-block  0
+unconditional  0 taken 36
+        -:   34:
+        4:   35:  _first_name = strs[0];
+        4:   35-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   36:  _second_name = strs[1];
+        4:   36-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   37:  _third_name = strs[2];
+        4:   37-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   38:  _year_of_birth = atoi(strs[3].c_str());
+        4:   38-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   39:  _gender = static_cast<gender>(atoi(strs[4].c_str()));
+        4:   39-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   40:  _marital_status = static_cast<marital_status>(atoi(strs[5].c_str()));
+        4:   40-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   41:  _university = static_cast<university>(atoi(strs[6].c_str()));
+        4:   41-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   42:  _mobile_phone = strs[7];
+        4:   42-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:   43:  _city = static_cast<city>(atoi(strs[8].c_str()));
+        4:   43-block  0
+branch  0 taken 0
+branch  1 taken 4
+       40:   44:}
+    $$$$$:   44-block  0
+unconditional  0 never executed
+    $$$$$:   44-block  1
+unconditional  1 never executed
+    $$$$$:   44-block  2
+unconditional  2 never executed
+    $$$$$:   44-block  3
+unconditional  3 never executed
+        4:   44-block  4
+unconditional  4 taken 4
+       36:   44-block  5
+branch  5 taken 36
+branch  6 taken 0
+       36:   44-block  6
+branch  7 taken 32
+branch  8 taken 4
+        4:   44-block  7
+unconditional  9 taken 4
+    $$$$$:   44-block  8
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   44-block  9
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   44-block 10
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   44-block 11
+unconditional 16 never executed
+    $$$$$:   44-block 12
+branch 17 never executed
+branch 18 never executed
+    $$$$$:   44-block 13
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   44-block 14
+unconditional 21 never executed
+    $$$$$:   44-block 15
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   44-block 16
+unconditional 24 never executed
+    $$$$$:   44-block 17
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   44-block 18
+unconditional 27 never executed
+    $$$$$:   44-block 19
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   44-block 20
+unconditional 30 never executed
+    $$$$$:   44-block 21
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   44-block 22
+unconditional 33 never executed
+    $$$$$:   44-block 23
+        4:   44-block 24
+unconditional 34 taken 4
+function _ZN9applicant9to_stringENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE called 2 returned 100% blocks executed 40%
+        2:   45:std::string applicant::to_string(std::string divider) {
+        2:   45-block  0
+unconditional  0 taken 2
+        2:   46:  return
+        2:   46-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   46-block  1
+branch  2 taken 2
+branch  3 taken 0
+        2:   46-block  2
+branch  4 taken 2
+branch  5 taken 0
+        2:   46-block  3
+branch  6 taken 2
+branch  7 taken 0
+        2:   46-block  4
+branch  8 taken 2
+branch  9 taken 0
+        2:   46-block  5
+branch 10 taken 2
+branch 11 taken 0
+        2:   46-block  6
+branch 12 taken 2
+branch 13 taken 0
+        2:   46-block  7
+branch 14 taken 2
+branch 15 taken 0
+        2:   46-block  8
+branch 16 taken 2
+branch 17 taken 0
+        2:   46-block  9
+branch 18 taken 2
+branch 19 taken 0
+        2:   46-block 10
+branch 20 taken 2
+branch 21 taken 0
+        2:   46-block 11
+branch 22 taken 2
+branch 23 taken 0
+        2:   46-block 12
+branch 24 taken 2
+branch 25 taken 0
+        2:   46-block 13
+branch 26 taken 2
+branch 27 taken 0
+        2:   46-block 14
+branch 28 taken 2
+branch 29 taken 0
+        2:   46-block 15
+branch 30 taken 2
+branch 31 taken 0
+        2:   46-block 16
+branch 32 taken 2
+branch 33 taken 0
+        2:   46-block 17
+branch 34 taken 2
+branch 35 taken 0
+        2:   46-block 18
+branch 36 taken 2
+branch 37 taken 0
+        2:   46-block 19
+branch 38 taken 2
+branch 39 taken 0
+        2:   46-block 20
+branch 40 taken 2
+branch 41 taken 0
+        2:   46-block 21
+branch 42 taken 2
+branch 43 taken 0
+        2:   46-block 22
+unconditional 44 taken 2
+    $$$$$:   46-block 23
+branch 45 never executed
+branch 46 never executed
+    $$$$$:   46-block 24
+unconditional 47 never executed
+    $$$$$:   46-block 25
+branch 48 never executed
+branch 49 never executed
+    $$$$$:   46-block 26
+unconditional 50 never executed
+    $$$$$:   46-block 27
+branch 51 never executed
+branch 52 never executed
+    $$$$$:   46-block 28
+unconditional 53 never executed
+    $$$$$:   46-block 29
+branch 54 never executed
+branch 55 never executed
+    $$$$$:   46-block 30
+unconditional 56 never executed
+    $$$$$:   46-block 31
+branch 57 never executed
+branch 58 never executed
+    $$$$$:   46-block 32
+unconditional 59 never executed
+    $$$$$:   46-block 33
+branch 60 never executed
+branch 61 never executed
+    $$$$$:   46-block 34
+unconditional 62 never executed
+    $$$$$:   46-block 35
+branch 63 never executed
+branch 64 never executed
+    $$$$$:   46-block 36
+unconditional 65 never executed
+    $$$$$:   46-block 37
+branch 66 never executed
+branch 67 never executed
+    $$$$$:   46-block 38
+unconditional 68 never executed
+    $$$$$:   46-block 39
+branch 69 never executed
+branch 70 never executed
+    $$$$$:   46-block 40
+unconditional 71 never executed
+    $$$$$:   46-block 41
+branch 72 never executed
+branch 73 never executed
+    $$$$$:   46-block 42
+unconditional 74 never executed
+    $$$$$:   46-block 43
+branch 75 never executed
+branch 76 never executed
+    $$$$$:   46-block 44
+unconditional 77 never executed
+    $$$$$:   46-block 45
+branch 78 never executed
+branch 79 never executed
+    $$$$$:   46-block 46
+unconditional 80 never executed
+    $$$$$:   46-block 47
+branch 81 never executed
+branch 82 never executed
+    $$$$$:   46-block 48
+unconditional 83 never executed
+    $$$$$:   46-block 49
+branch 84 never executed
+branch 85 never executed
+    $$$$$:   46-block 50
+unconditional 86 never executed
+    $$$$$:   46-block 51
+branch 87 never executed
+branch 88 never executed
+    $$$$$:   46-block 52
+unconditional 89 never executed
+    $$$$$:   46-block 53
+branch 90 never executed
+branch 91 never executed
+    $$$$$:   46-block 54
+unconditional 92 never executed
+    $$$$$:   46-block 55
+branch 93 never executed
+branch 94 never executed
+    $$$$$:   46-block 56
+unconditional 95 never executed
+    $$$$$:   46-block 57
+branch 96 never executed
+branch 97 never executed
+    $$$$$:   46-block 58
+unconditional 98 never executed
+    $$$$$:   46-block 59
+branch 99 never executed
+branch 100 never executed
+    $$$$$:   46-block 60
+unconditional 101 never executed
+    $$$$$:   46-block 61
+branch 102 never executed
+branch 103 never executed
+    $$$$$:   46-block 62
+unconditional 104 never executed
+    $$$$$:   46-block 63
+branch 105 never executed
+branch 106 never executed
+    $$$$$:   46-block 64
+unconditional 107 never executed
+    $$$$$:   46-block 65
+branch 108 never executed
+branch 109 never executed
+    $$$$$:   46-block 66
+unconditional 110 never executed
+    $$$$$:   46-block 67
+branch 111 never executed
+branch 112 never executed
+    $$$$$:   46-block 68
+unconditional 113 never executed
+    $$$$$:   46-block 69
+    $$$$$:   46-block 70
+        4:   47:      _first_name + divider +
+        2:   47-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   47-block  1
+branch  2 taken 2
+branch  3 taken 0
+        2:   48:          _second_name + divider +
+        2:   48-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   48-block  1
+branch  2 taken 2
+branch  3 taken 0
+        4:   49:          _third_name + divider +
+        2:   49-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   49-block  1
+branch  2 taken 2
+branch  3 taken 0
+        6:   50:          std::to_string(_year_of_birth) + divider +
+        2:   50-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   50-block  1
+branch  2 taken 2
+branch  3 taken 0
+        2:   50-block  2
+branch  4 taken 2
+branch  5 taken 0
+        6:   51:          std::to_string(_gender) + divider +
+        2:   51-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   51-block  1
+branch  2 taken 2
+branch  3 taken 0
+        2:   51-block  2
+branch  4 taken 2
+branch  5 taken 0
+        6:   52:          std::to_string(_marital_status) + divider +
+        2:   52-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   52-block  1
+branch  2 taken 2
+branch  3 taken 0
+        2:   52-block  2
+branch  4 taken 2
+branch  5 taken 0
+        4:   53:          std::to_string(_university) + divider +
+        2:   53-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   53-block  1
+branch  2 taken 2
+branch  3 taken 0
+        2:   53-block  2
+branch  4 taken 2
+branch  5 taken 0
+        4:   54:          _mobile_phone + divider +
+        2:   54-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   54-block  1
+branch  2 taken 2
+branch  3 taken 0
+        6:   55:          std::to_string(_city) + divider +
+        2:   55-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   55-block  1
+branch  2 taken 2
+branch  3 taken 0
+        2:   55-block  2
+branch  4 taken 2
+branch  5 taken 0
+        2:   56:          std::to_string(_min_salary);
+        2:   56-block  0
+branch  0 taken 2
+branch  1 taken 0
+    #####:   57:}
+    $$$$$:   57-block  0
+unconditional  0 never executed
+    $$$$$:   57-block  1
+unconditional  1 never executed
+    $$$$$:   57-block  2
+unconditional  2 never executed
+    $$$$$:   57-block  3
+unconditional  3 never executed
+    $$$$$:   57-block  4
+unconditional  4 never executed
+    $$$$$:   57-block  5
+unconditional  5 never executed
+    $$$$$:   57-block  6
+unconditional  6 never executed
+    $$$$$:   57-block  7
+unconditional  7 never executed
+    $$$$$:   57-block  8
+unconditional  8 never executed
+    $$$$$:   57-block  9
+unconditional  9 never executed
+    $$$$$:   57-block 10
+unconditional 10 never executed
+    $$$$$:   57-block 11
+unconditional 11 never executed
+    $$$$$:   57-block 12
+unconditional 12 never executed
+    $$$$$:   57-block 13
+unconditional 13 never executed
+    $$$$$:   57-block 14
+unconditional 14 never executed
+    $$$$$:   57-block 15
+unconditional 15 never executed
+    $$$$$:   57-block 16
+unconditional 16 never executed
+    $$$$$:   57-block 17
+unconditional 17 never executed
+    $$$$$:   57-block 18
+unconditional 18 never executed
+    $$$$$:   57-block 19
+unconditional 19 never executed
+    $$$$$:   57-block 20
+unconditional 20 never executed
+    $$$$$:   57-block 21
+unconditional 21 never executed
+function _ZN9applicant6to_csvEv called 2 returned 100% blocks executed 42%
+        2:   58:std::string applicant::to_csv() {
+        2:   58-block  0
+unconditional  0 taken 2
+        2:   59:  return to_string(",");
+        2:   59-block  0
+branch  0 taken 2
+branch  1 taken 0
+        2:   59-block  1
+unconditional  2 taken 2
+    $$$$$:   59-block  2
+branch  3 never executed
+branch  4 never executed
+    $$$$$:   59-block  3
+unconditional  5 never executed
+    $$$$$:   59-block  4
+    $$$$$:   59-block  5
+    #####:   60:}
+function _ZN9applicant8get_nameEv called 0 returned 0% blocks executed 0%
+    #####:   61:std::string applicant::get_name() {
+    $$$$$:   61-block  0
+unconditional  0 never executed
+    #####:   62:  return _first_name + " " + _second_name + " " + _third_name;
+    $$$$$:   62-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   62-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   62-block  2
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   62-block  3
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   62-block  4
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   62-block  5
+unconditional 10 never executed
+    $$$$$:   62-block  6
+branch 11 never executed
+branch 12 never executed
+    $$$$$:   62-block  7
+unconditional 13 never executed
+    $$$$$:   62-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   62-block  9
+unconditional 16 never executed
+    $$$$$:   62-block 10
+branch 17 never executed
+branch 18 never executed
+    $$$$$:   62-block 11
+unconditional 19 never executed
+    $$$$$:   62-block 12
+    $$$$$:   62-block 13
+    #####:   63:}
+    $$$$$:   63-block  0
+unconditional  0 never executed
+    $$$$$:   63-block  1
+unconditional  1 never executed
+function _ZN9applicant17get_year_of_birthEv called 0 returned 0% blocks executed 0%
+    #####:   64:int applicant::get_year_of_birth() {
+    $$$$$:   64-block  0
+unconditional  0 never executed
+    #####:   65:  return _year_of_birth;
+    $$$$$:   65-block  0
+unconditional  0 never executed
+        -:   66:}
+function _ZN9applicant10get_genderEv called 0 returned 0% blocks executed 0%
+    #####:   67:applicant::gender applicant::get_gender() {
+    $$$$$:   67-block  0
+unconditional  0 never executed
+    #####:   68:  return _gender;
+    $$$$$:   68-block  0
+unconditional  0 never executed
+        -:   69:}
+function _ZN9applicant18get_marital_statusEv called 0 returned 0% blocks executed 0%
+    #####:   70:applicant::marital_status applicant::get_marital_status() {
+    $$$$$:   70-block  0
+unconditional  0 never executed
+    #####:   71:  return _marital_status;
+    $$$$$:   71-block  0
+unconditional  0 never executed
+        -:   72:}
+function _ZN9applicant14get_universityEv called 0 returned 0% blocks executed 0%
+    #####:   73:applicant::university applicant::get_university() {
+    $$$$$:   73-block  0
+unconditional  0 never executed
+    #####:   74:  return _university;
+    $$$$$:   74-block  0
+unconditional  0 never executed
+        -:   75:}
+function _ZN9applicant16get_mobile_phoneEv called 0 returned 0% blocks executed 0%
+    #####:   76:std::string applicant::get_mobile_phone() {
+    $$$$$:   76-block  0
+unconditional  0 never executed
+    #####:   77:  return _mobile_phone;
+    $$$$$:   77-block  0
+unconditional  0 never executed
+        -:   78:}
+function _ZN9applicant8get_cityEv called 0 returned 0% blocks executed 0%
+    #####:   79:applicant::city applicant::get_city() {
+    $$$$$:   79-block  0
+unconditional  0 never executed
+    #####:   80:  return _city;
+    $$$$$:   80-block  0
+unconditional  0 never executed
+        -:   81:}
+function _ZN9applicant10min_salaryEv called 0 returned 0% blocks executed 0%
+    #####:   82:int applicant::min_salary() {
+    $$$$$:   82-block  0
+unconditional  0 never executed
+    #####:   83:  return _min_salary;
+    $$$$$:   83-block  0
+unconditional  0 never executed
+        -:   84:}
