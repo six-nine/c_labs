@@ -1,7 +1,7 @@
         -:    0:Source:/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/type_traits
-        -:    0:Graph:applicant.gcno
-        -:    0:Data:applicant.gcda
-        -:    0:Runs:1
+        -:    0:Graph:employer.gcno
+        -:    0:Data:employer.gcda
+        -:    0:Runs:2
         -:    0:Programs:1
         -:    1:// -*- C++ -*-
         -:    2://===------------------------ type_traits ---------------------------------===//
@@ -456,19 +456,14 @@
         -:  451:inline _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  452:_LIBCPP_NO_CFI _LIBCPP_INLINE_VISIBILITY
         -:  453:_Tp*
-function _ZNSt3__1L9addressofIcEEPT_RS1_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__1L9addressofIKcEEPT_RS2_ called 20 returned 100% blocks executed 100%
-       20:  454:addressof(_Tp& __x) _NOEXCEPT
-    $$$$$:  454-block  0
-unconditional  0 never executed
-       20:  454-block  1
-unconditional  1 taken 20
+function _ZNSt3__1L9addressofIKcEEPT_RS2_ called 70 returned 100% blocks executed 100%
+       70:  454:addressof(_Tp& __x) _NOEXCEPT
+       70:  454-block  0
+unconditional  0 taken 70
         -:  455:{
-       20:  456:    return __builtin_addressof(__x);
-    $$$$$:  456-block  0
-unconditional  0 never executed
-       20:  456-block  1
-unconditional  1 taken 20
+       70:  456:    return __builtin_addressof(__x);
+       70:  456-block  0
+unconditional  0 taken 70
         -:  457:}
         -:  458:
         -:  459:#else
@@ -2367,14 +2362,14 @@ unconditional  1 taken 20
         -: 2352:template <class _Tp>
         -: 2353:inline _LIBCPP_INLINE_VISIBILITY
         -: 2354:_Tp&
-function _ZNSt3__1L7forwardINS_9allocatorIcEEEERT_RNS_16remove_referenceIS3_E4typeE called 0 returned 0% blocks executed 0%
-    #####: 2355:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
-    $$$$$: 2355-block  0
-unconditional  0 never executed
+function _ZNSt3__1L7forwardINS_9allocatorIcEEEERT_RNS_16remove_referenceIS3_E4typeE called 112 returned 100% blocks executed 100%
+      112: 2355:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
+      112: 2355-block  0
+unconditional  0 taken 112
         -: 2356:{
-    #####: 2357:    return __t;
-    $$$$$: 2357-block  0
-unconditional  0 never executed
+      112: 2357:    return __t;
+      112: 2357-block  0
+unconditional  0 taken 112
         -: 2358:}
         -: 2359:
         -: 2360:

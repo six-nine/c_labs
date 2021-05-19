@@ -21,10 +21,10 @@ applicant::applicant(std::string first_name,
   _min_salary = min_salary;
 }
 applicant::applicant(std::string csv) {
-  std::string strs[9];
+  std::string strs[10];
   csv.push_back(',');
   int j = 0;
-  for (int i = 0; i < 9; i++) {
+  for (int i = 0; i < 10; i++) {
     while (j < csv.size() && csv[j] != ',') {
       strs[i].push_back(csv[j]);
       j++;
@@ -41,6 +41,7 @@ applicant::applicant(std::string csv) {
   _university = static_cast<university>(atoi(strs[6].c_str()));
   _mobile_phone = strs[7];
   _city = static_cast<city>(atoi(strs[8].c_str()));
+  _min_salary = atoi(strs[9].c_str());
 }
 std::string applicant::to_string(std::string divider) {
   return

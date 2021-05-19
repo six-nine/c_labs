@@ -1,0 +1,194 @@
+        -:    0:Source:employer.cpp
+        -:    0:Graph:employer.gcno
+        -:    0:Data:employer.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include "employer.h"
+function _ZN8employerC2EN9applicant4cityEii called 0 returned 0% blocks executed 0%
+function _ZN8employerC1EN9applicant4cityEii called 0 returned 0% blocks executed 0%
+    #####:    2:employer::employer(applicant::city city_, int min_salary, int max_year_of_birth)
+    $$$$$:    2-block  0
+unconditional  0 never executed
+    $$$$$:    2-block  1
+unconditional  1 never executed
+    #####:    3:    : ideal_candidate(
+    $$$$$:    3-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:    3-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:    3-block  2
+branch  4 never executed
+branch  5 never executed
+    $$$$$:    3-block  3
+branch  6 never executed
+branch  7 never executed
+    $$$$$:    3-block  4
+branch  8 never executed
+branch  9 never executed
+    $$$$$:    3-block  5
+unconditional 10 never executed
+    $$$$$:    3-block  6
+branch 11 never executed
+branch 12 never executed
+    $$$$$:    3-block  7
+unconditional 13 never executed
+    $$$$$:    3-block  8
+branch 14 never executed
+branch 15 never executed
+    $$$$$:    3-block  9
+unconditional 16 never executed
+    $$$$$:    3-block 10
+branch 17 never executed
+branch 18 never executed
+    $$$$$:    3-block 11
+unconditional 19 never executed
+    $$$$$:    3-block 12
+    $$$$$:    3-block 13
+    #####:    4:    "",
+    #####:    5:    "",
+    $$$$$:    5-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:    6:    "",
+    $$$$$:    6-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:    7:    max_year_of_birth,
+        -:    8:    applicant::NONE,
+        -:    9:    applicant::SINGLE,
+        -:   10:    applicant::BSUIR,
+    #####:   11:    "88005553535",
+    $$$$$:   11-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   12:    city_,
+    #####:   13:    min_salary
+    #####:   14:){}
+    $$$$$:   14-block  0
+unconditional  0 never executed
+    $$$$$:   14-block  1
+unconditional  1 never executed
+    $$$$$:   14-block  2
+unconditional  2 never executed
+    $$$$$:   14-block  3
+unconditional  3 never executed
+    $$$$$:   14-block  4
+unconditional  4 never executed
+function _ZN8employer5suitsE9applicant called 0 returned 0% blocks executed 0%
+    #####:   15:bool employer::suits(applicant appl) {
+    $$$$$:   15-block  0
+unconditional  0 never executed
+    #####:   16:  return
+    $$$$$:   16-block  0
+unconditional  0 never executed
+    #####:   17:      appl.get_city() == ideal_candidate.get_city() &&
+    $$$$$:   17-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   18:          appl.min_salary() <= ideal_candidate.min_salary() &&
+    $$$$$:   18-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   19:          appl.get_year_of_birth() <= ideal_candidate.get_year_of_birth();
+    $$$$$:   19-block  0
+unconditional  0 never executed
+        -:   20:}
+function _ZN8employer6to_csvEv called 0 returned 0% blocks executed 0%
+    #####:   21:std::string employer::to_csv() {
+    $$$$$:   21-block  0
+unconditional  0 never executed
+    #####:   22:  return ideal_candidate.to_csv();
+    $$$$$:   22-block  0
+unconditional  0 never executed
+        -:   23:}
+function _ZN8employer9to_stringEv called 0 returned 0% blocks executed 0%
+    #####:   24:std::string employer::to_string() {
+    $$$$$:   24-block  0
+unconditional  0 never executed
+    #####:   25:  return std::to_string(ideal_candidate.get_city()) + "\n" + std::to_string(ideal_candidate.get_year_of_birth()) + "\n" + std::to_string(ideal_candidate.min_salary());
+    $$$$$:   25-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   25-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   25-block  2
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   25-block  3
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   25-block  4
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   25-block  5
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   25-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   25-block  7
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   25-block  8
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   25-block  9
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   25-block 10
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   25-block 11
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   25-block 12
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   25-block 13
+unconditional 26 never executed
+    $$$$$:   25-block 14
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   25-block 15
+unconditional 29 never executed
+    $$$$$:   25-block 16
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   25-block 17
+unconditional 32 never executed
+    $$$$$:   25-block 18
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   25-block 19
+unconditional 35 never executed
+    $$$$$:   25-block 20
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   25-block 21
+unconditional 38 never executed
+    $$$$$:   25-block 22
+branch 39 never executed
+branch 40 never executed
+    $$$$$:   25-block 23
+unconditional 41 never executed
+    $$$$$:   25-block 24
+branch 42 never executed
+branch 43 never executed
+    $$$$$:   25-block 25
+unconditional 44 never executed
+    $$$$$:   25-block 26
+    $$$$$:   25-block 27
+    #####:   26:}
+    $$$$$:   26-block  0
+unconditional  0 never executed
+    $$$$$:   26-block  1
+unconditional  1 never executed
+    $$$$$:   26-block  2
+unconditional  2 never executed
+    $$$$$:   26-block  3
+unconditional  3 never executed
+    $$$$$:   26-block  4
+unconditional  4 never executed
