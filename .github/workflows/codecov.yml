@@ -6,12 +6,12 @@ jobs:
     steps:
       - name: Fetch
         uses: actions/checkout@master
-      - name: Test
-        run: |
-          cd Lab7
-          g++ -ftest-coverage -fprofile-arcs -O0 -o test tests.cpp employer.cpp applicant.cpp
-          ./test
-          gcov -abcfu applicant.cpp
+#       - name: Test
+#         run: |
+#           cd Lab7
+#           g++ -ftest-coverage -fprofile-arcs -O0 -o test tests.cpp employer.cpp applicant.cpp
+#           ./test
+#           gcov -abcfu applicant.cpp
       - name: Upload
         uses: codecov/codecov-action@v1
         with:
