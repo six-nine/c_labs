@@ -1,7 +1,7 @@
         -:    0:Source:/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/type_traits
         -:    0:Graph:employer.gcno
         -:    0:Data:employer.gcda
-        -:    0:Runs:3
+        -:    0:Runs:4
         -:    0:Programs:1
         -:    1:// -*- C++ -*-
         -:    2://===------------------------ type_traits ---------------------------------===//
@@ -456,14 +456,14 @@
         -:  451:inline _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  452:_LIBCPP_NO_CFI _LIBCPP_INLINE_VISIBILITY
         -:  453:_Tp*
-function _ZNSt3__1L9addressofIKcEEPT_RS2_ called 96 returned 100% blocks executed 100%
-       96:  454:addressof(_Tp& __x) _NOEXCEPT
-       96:  454-block  0
-unconditional  0 taken 96
+function _ZNSt3__1L9addressofIKcEEPT_RS2_ called 122 returned 100% blocks executed 100%
+      122:  454:addressof(_Tp& __x) _NOEXCEPT
+      122:  454-block  0
+unconditional  0 taken 122
         -:  455:{
-       96:  456:    return __builtin_addressof(__x);
-       96:  456-block  0
-unconditional  0 taken 96
+      122:  456:    return __builtin_addressof(__x);
+      122:  456-block  0
+unconditional  0 taken 122
         -:  457:}
         -:  458:
         -:  459:#else
@@ -2362,14 +2362,14 @@ unconditional  0 taken 96
         -: 2352:template <class _Tp>
         -: 2353:inline _LIBCPP_INLINE_VISIBILITY
         -: 2354:_Tp&
-function _ZNSt3__1L7forwardINS_9allocatorIcEEEERT_RNS_16remove_referenceIS3_E4typeE called 152 returned 100% blocks executed 100%
-      152: 2355:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
-      152: 2355-block  0
-unconditional  0 taken 152
+function _ZNSt3__1L7forwardINS_9allocatorIcEEEERT_RNS_16remove_referenceIS3_E4typeE called 192 returned 100% blocks executed 100%
+      192: 2355:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
+      192: 2355-block  0
+unconditional  0 taken 192
         -: 2356:{
-      152: 2357:    return __t;
-      152: 2357-block  0
-unconditional  0 taken 152
+      192: 2357:    return __t;
+      192: 2357-block  0
+unconditional  0 taken 192
         -: 2358:}
         -: 2359:
         -: 2360:

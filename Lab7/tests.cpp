@@ -12,8 +12,6 @@ int main(){
   employer amp1(app1);
   employer amp2("Kozlov,Vadim,Aleksandrovich,2002,0,0,1,23321jneknf,3,1000");
 
-  std::cerr << app1.min_salary();
-
   assert(app1.get_name() == "Kozlov Vadim Aleksandrovich");
   assert(app1.get_year_of_birth() == 2002);
   assert(app1.get_gender() == applicant::MALE);
