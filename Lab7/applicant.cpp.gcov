@@ -493,13 +493,13 @@ unconditional  9 never executed
 unconditional 10 never executed
         1:   46-block  9
 unconditional 11 taken 1
-function _ZN9applicant9to_stringENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEbb called 0 returned 0% blocks executed 0%
-    #####:   47:std::string applicant::to_string(std::string divider, bool save_id, bool include_description) {
-    $$$$$:   47-block  0
-unconditional  0 never executed
-    #####:   48:  return
-    $$$$$:   48-block  0
-unconditional  0 never executed
+function _ZN9applicant9to_stringENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEbb called 3 returned 100% blocks executed 46%
+        3:   47:std::string applicant::to_string(std::string divider, bool save_id, bool include_description) {
+        3:   47-block  0
+unconditional  0 taken 3
+        3:   48:  return
+        3:   48-block  0
+unconditional  0 taken 3
     $$$$$:   48-block  1
 unconditional  1 never executed
     $$$$$:   48-block  2
@@ -561,161 +561,161 @@ unconditional 29 never executed
     $$$$$:   48-block 30
 unconditional 30 never executed
     $$$$$:   48-block 31
-    #####:   49:      _first_name + divider +
-    $$$$$:   49-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   49-block  1
-branch  2 never executed
-branch  3 never executed
-    #####:   50:      _second_name + divider +
-    $$$$$:   50-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   50-block  1
-branch  2 never executed
-branch  3 never executed
-    #####:   51:      _third_name + divider +
-    $$$$$:   51-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   51-block  1
-branch  2 never executed
-branch  3 never executed
-    #####:   52:      (include_description ? "Birth year: " : "") + std::to_string(_year_of_birth) + divider +
-    $$$$$:   52-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   52-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   52-block  2
-branch  4 never executed
-branch  5 never executed
-    $$$$$:   52-block  3
-branch  6 never executed
-branch  7 never executed
-    #####:   53:      (include_description ? "Gender: " : "") + (save_id ? std::to_string(_gender) : gender[_gender]) + divider +
-    $$$$$:   53-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   53-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   53-block  2
-unconditional  4 never executed
-    $$$$$:   53-block  3
-branch  5 never executed
-branch  6 never executed
-    $$$$$:   53-block  4
-branch  7 never executed
-branch  8 never executed
-    $$$$$:   53-block  5
-unconditional  9 never executed
-    $$$$$:   53-block  6
-branch 10 never executed
-branch 11 never executed
-    $$$$$:   53-block  7
-branch 12 never executed
-branch 13 never executed
-    $$$$$:   53-block  8
-branch 14 never executed
-branch 15 never executed
-    #####:   54:      (include_description ? "Marital status: " : "") + (save_id ? std::to_string(_marital_status) : marital_status[_marital_status]) + divider +
-    $$$$$:   54-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   54-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   54-block  2
-unconditional  4 never executed
-    $$$$$:   54-block  3
-branch  5 never executed
-branch  6 never executed
-    $$$$$:   54-block  4
-branch  7 never executed
-branch  8 never executed
-    $$$$$:   54-block  5
-unconditional  9 never executed
-    $$$$$:   54-block  6
-branch 10 never executed
-branch 11 never executed
-    $$$$$:   54-block  7
-branch 12 never executed
-branch 13 never executed
-    $$$$$:   54-block  8
-branch 14 never executed
-branch 15 never executed
-    #####:   55:      (include_description ? "University: " : "") + (save_id ? std::to_string(_university) : university[_university]) + divider +
-    $$$$$:   55-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   55-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   55-block  2
-unconditional  4 never executed
-    $$$$$:   55-block  3
-branch  5 never executed
-branch  6 never executed
-    $$$$$:   55-block  4
-branch  7 never executed
-branch  8 never executed
-    $$$$$:   55-block  5
-unconditional  9 never executed
-    $$$$$:   55-block  6
-branch 10 never executed
-branch 11 never executed
-    $$$$$:   55-block  7
-branch 12 never executed
-branch 13 never executed
-    $$$$$:   55-block  8
-branch 14 never executed
-branch 15 never executed
-    #####:   56:      (include_description ? "Mobile phone: " : "") + _mobile_phone + divider +
-    $$$$$:   56-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   56-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   56-block  2
-branch  4 never executed
-branch  5 never executed
-    #####:   57:      (include_description ? "City: " : "") + (save_id ? std::to_string(_city) : city[_city]) + divider +
-    $$$$$:   57-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   57-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   57-block  2
-unconditional  4 never executed
-    $$$$$:   57-block  3
-branch  5 never executed
-branch  6 never executed
-    $$$$$:   57-block  4
-branch  7 never executed
-branch  8 never executed
-    $$$$$:   57-block  5
-unconditional  9 never executed
-    $$$$$:   57-block  6
-branch 10 never executed
-branch 11 never executed
-    $$$$$:   57-block  7
-branch 12 never executed
-branch 13 never executed
-    $$$$$:   57-block  8
-branch 14 never executed
-branch 15 never executed
-    #####:   58:      (include_description ? "Minimal salary: " : "") + std::to_string(_min_salary);
-    $$$$$:   58-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   58-block  1
-branch  2 never executed
-branch  3 never executed
+        6:   49:      _first_name + divider +
+        3:   49-block  0
+branch  0 taken 3
+branch  1 taken 0
+        3:   49-block  1
+branch  2 taken 3
+branch  3 taken 0
+        3:   50:      _second_name + divider +
+        3:   50-block  0
+branch  0 taken 3
+branch  1 taken 0
+        3:   50-block  1
+branch  2 taken 3
+branch  3 taken 0
+        3:   51:      _third_name + divider +
+        3:   51-block  0
+branch  0 taken 3
+branch  1 taken 0
+        3:   51-block  1
+branch  2 taken 3
+branch  3 taken 0
+        3:   52:      (include_description ? "Birth year: " : "") + std::to_string(_year_of_birth) + divider +
+        3:   52-block  0
+branch  0 taken 3
+branch  1 taken 0
+        3:   52-block  1
+branch  2 taken 3
+branch  3 taken 0
+        3:   52-block  2
+branch  4 taken 3
+branch  5 taken 0
+        3:   52-block  3
+branch  6 taken 3
+branch  7 taken 0
+        3:   53:      (include_description ? "Gender: " : "") + (save_id ? std::to_string(_gender) : gender[_gender]) + divider +
+        3:   53-block  0
+branch  0 taken 1
+branch  1 taken 2
+        1:   53-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   53-block  2
+unconditional  4 taken 1
+        2:   53-block  3
+branch  5 taken 2
+branch  6 taken 0
+        2:   53-block  4
+branch  7 taken 2
+branch  8 taken 0
+        2:   53-block  5
+unconditional  9 taken 2
+        3:   53-block  6
+branch 10 taken 3
+branch 11 taken 0
+        3:   53-block  7
+branch 12 taken 3
+branch 13 taken 0
+        3:   53-block  8
+branch 14 taken 3
+branch 15 taken 0
+        3:   54:      (include_description ? "Marital status: " : "") + (save_id ? std::to_string(_marital_status) : marital_status[_marital_status]) + divider +
+        3:   54-block  0
+branch  0 taken 1
+branch  1 taken 2
+        1:   54-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   54-block  2
+unconditional  4 taken 1
+        2:   54-block  3
+branch  5 taken 2
+branch  6 taken 0
+        2:   54-block  4
+branch  7 taken 2
+branch  8 taken 0
+        2:   54-block  5
+unconditional  9 taken 2
+        3:   54-block  6
+branch 10 taken 3
+branch 11 taken 0
+        3:   54-block  7
+branch 12 taken 3
+branch 13 taken 0
+        3:   54-block  8
+branch 14 taken 3
+branch 15 taken 0
+        3:   55:      (include_description ? "University: " : "") + (save_id ? std::to_string(_university) : university[_university]) + divider +
+        3:   55-block  0
+branch  0 taken 1
+branch  1 taken 2
+        1:   55-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   55-block  2
+unconditional  4 taken 1
+        2:   55-block  3
+branch  5 taken 2
+branch  6 taken 0
+        2:   55-block  4
+branch  7 taken 2
+branch  8 taken 0
+        2:   55-block  5
+unconditional  9 taken 2
+        3:   55-block  6
+branch 10 taken 3
+branch 11 taken 0
+        3:   55-block  7
+branch 12 taken 3
+branch 13 taken 0
+        3:   55-block  8
+branch 14 taken 3
+branch 15 taken 0
+        3:   56:      (include_description ? "Mobile phone: " : "") + _mobile_phone + divider +
+        3:   56-block  0
+branch  0 taken 3
+branch  1 taken 0
+        3:   56-block  1
+branch  2 taken 3
+branch  3 taken 0
+        3:   56-block  2
+branch  4 taken 3
+branch  5 taken 0
+        3:   57:      (include_description ? "City: " : "") + (save_id ? std::to_string(_city) : city[_city]) + divider +
+        3:   57-block  0
+branch  0 taken 1
+branch  1 taken 2
+        1:   57-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   57-block  2
+unconditional  4 taken 1
+        2:   57-block  3
+branch  5 taken 2
+branch  6 taken 0
+        2:   57-block  4
+branch  7 taken 2
+branch  8 taken 0
+        2:   57-block  5
+unconditional  9 taken 2
+        3:   57-block  6
+branch 10 taken 3
+branch 11 taken 0
+        3:   57-block  7
+branch 12 taken 3
+branch 13 taken 0
+        3:   57-block  8
+branch 14 taken 3
+branch 15 taken 0
+        3:   58:      (include_description ? "Minimal salary: " : "") + std::to_string(_min_salary);
+        3:   58-block  0
+branch  0 taken 3
+branch  1 taken 0
+        3:   58-block  1
+branch  2 taken 3
+branch  3 taken 0
     #####:   59:}
     $$$$$:   59-block  0
 unconditional  0 never executed
@@ -775,16 +775,16 @@ unconditional 26 never executed
 unconditional 27 never executed
     $$$$$:   59-block 28
 unconditional 28 never executed
-function _ZN9applicant6to_csvEv called 0 returned 0% blocks executed 0%
-    #####:   60:std::string applicant::to_csv() {
-    $$$$$:   60-block  0
-unconditional  0 never executed
-    #####:   61:  return to_string(",", true, false);
-    $$$$$:   61-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   61-block  1
-unconditional  2 never executed
+function _ZN9applicant6to_csvEv called 1 returned 100% blocks executed 60%
+        1:   60:std::string applicant::to_csv() {
+        1:   60-block  0
+unconditional  0 taken 1
+        1:   61:  return to_string(",", true, false);
+        1:   61-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   61-block  1
+unconditional  2 taken 1
     $$$$$:   61-block  2
 unconditional  3 never executed
     $$$$$:   61-block  3
@@ -865,11 +865,11 @@ unconditional  0 taken 2
         2:   82-block  0
 unconditional  0 taken 2
         -:   83:}
-function _ZN9applicant10min_salaryEv called 0 returned 0% blocks executed 0%
-    #####:   84:int applicant::min_salary() {
-    $$$$$:   84-block  0
-unconditional  0 never executed
-    #####:   85:  return _min_salary;
-    $$$$$:   85-block  0
-unconditional  0 never executed
+function _ZN9applicant10min_salaryEv called 2 returned 100% blocks executed 100%
+        2:   84:int applicant::min_salary() {
+        2:   84-block  0
+unconditional  0 taken 2
+        2:   85:  return _min_salary;
+        2:   85-block  0
+unconditional  0 taken 2
         -:   86:}

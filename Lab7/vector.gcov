@@ -1727,15 +1727,15 @@ unconditional  2 taken 8
         -: 1538:template <class _Tp, class _Allocator>
         -: 1539:inline _LIBCPP_INLINE_VISIBILITY
         -: 1540:typename vector<_Tp, _Allocator>::reference
-function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEEixEm called 8 returned 100% blocks executed 100%
-        8: 1541:vector<_Tp, _Allocator>::operator[](size_type __n)
-        8: 1541-block  0
-unconditional  0 taken 8
+function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEEixEm called 16 returned 100% blocks executed 100%
+       16: 1541:vector<_Tp, _Allocator>::operator[](size_type __n)
+       16: 1541-block  0
+unconditional  0 taken 16
         -: 1542:{
         -: 1543:    _LIBCPP_ASSERT(__n < size(), "vector[] index out of bounds");
-        8: 1544:    return this->__begin_[__n];
-        8: 1544-block  0
-unconditional  0 taken 8
+       16: 1544:    return this->__begin_[__n];
+       16: 1544-block  0
+unconditional  0 taken 16
         -: 1545:}
         -: 1546:
         -: 1547:template <class _Tp, class _Allocator>
