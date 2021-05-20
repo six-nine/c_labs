@@ -38,10 +38,10 @@ int main() {
     if (command == 1) {
       string first_name, second_name, third_name;
       int birth_year;
-      applicant::gender gender;
-      applicant::marital_status status;
-      applicant::university university;
-      applicant::city city;
+      int gender;
+      int status;
+      int university;
+      int city;
       int min_salary;
       string mobile_phone;
       cout << "Enter full name: ";
@@ -53,19 +53,19 @@ int main() {
       while (g < 0 || g > 8){
         cin >> g;
       }
-      gender = static_cast<applicant::gender>(g);
+      gender = g;
       cout << "Marital status? 0 - married, 1 - single";
       g = -1;
       while (g < 0 || g > 1){
         cin >> g;
       }
-      status = static_cast<applicant::marital_status>(g);
+      status = g;
       cout << "Education? 0 - BSU, 1 - BSUIR";
       g = -1;
       while (g < 0 || g > 1){
         cin >> g;
       }
-      university = static_cast<applicant::university>(g);
+      university = g;
       cout << "City?\n"
               "0 BREST,\n"
               "1 VITEBSK,\n"
@@ -77,7 +77,7 @@ int main() {
       while (g < 0 || g > 5){
         cin >> g;
       }
-      city = static_cast<applicant::city>(g);
+      city = g;
       cout << "Minimal salary? ($) :";
       cin >> min_salary;
       cout << "And leave mobile phone, please: ";
@@ -86,7 +86,7 @@ int main() {
       applicants.push_back(new_applicant);
       applicants_db.add_record(new_applicant.to_csv());
     } else if (command == 2){
-      applicant::city city;
+      int city;
       int min_salary;
       int max_birth_year;
       cout << "Where is vacation located?\n"
@@ -100,7 +100,7 @@ int main() {
       while (g < 0 || g > 5){
         cin >> g;
       }
-      city = static_cast<applicant::city>(g);
+      city = g;
       cout << "Salary?\n";
       cin >> min_salary;
       cout << "Max birth year?\n";
@@ -134,11 +134,13 @@ int main() {
       }
     } else if (command == 5){
       for (int i = 0; i < employers.size(); i++){
+        cout << "---" << i << "---" << endl;
         cout << employers[i].to_string();
         cout << endl;
       }
     } else if (command == 6){
       for (int i = 0; i < applicants.size(); i++){
+        cout << "---" << i << "---" << endl;
         cout << applicants[i].to_string();
         cout << endl;
       }

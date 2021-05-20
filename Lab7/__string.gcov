@@ -1,7 +1,7 @@
         -:    0:Source:/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__string
         -:    0:Graph:employer.gcno
         -:    0:Data:employer.gcda
-        -:    0:Runs:4
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:// -*- C++ -*-
         -:    2://===-------------------------- __string ----------------------------------===//
@@ -252,12 +252,22 @@ unconditional  1 never executed
         -:  242:
         -:  243:inline _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  244:int
-        -:  245:char_traits<char>::compare(const char_type* __s1, const char_type* __s2, size_t __n) _NOEXCEPT
+function _ZNSt3__111char_traitsIcE7compareEPKcS3_m called 0 returned 0% blocks executed 0%
+    #####:  245:char_traits<char>::compare(const char_type* __s1, const char_type* __s2, size_t __n) _NOEXCEPT
+    $$$$$:  245-block  0
+unconditional  0 never executed
         -:  246:{
-        -:  247:    if (__n == 0)
-        -:  248:        return 0;
+    #####:  247:    if (__n == 0)
+    $$$$$:  247-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  248:        return 0;
+    $$$$$:  248-block  0
+unconditional  0 never executed
         -:  249:#if __has_feature(cxx_constexpr_string_builtins)
-        -:  250:    return __builtin_memcmp(__s1, __s2, __n);
+    #####:  250:    return __builtin_memcmp(__s1, __s2, __n);
+    $$$$$:  250-block  0
+unconditional  0 never executed
         -:  251:#elif _LIBCPP_STD_VER <= 14
         -:  252:    return memcmp(__s1, __s2, __n);
         -:  253:#else
@@ -270,7 +280,9 @@ unconditional  1 never executed
         -:  260:    }
         -:  261:    return 0;
         -:  262:#endif
-        -:  263:}
+    #####:  263:}
+    $$$$$:  263-block  0
+unconditional  0 never executed
         -:  264:
         -:  265:inline _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  266:const char*

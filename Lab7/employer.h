@@ -7,18 +7,15 @@
 class employer {
   applicant ideal_candidate;
  public:
-  employer(applicant::city city_, int min_salary, int max_year_of_birth);;
+  employer(int city_id, int min_salary, int max_year_of_birth);;
 
   employer(applicant applicant) : ideal_candidate(applicant){}
 
   employer(std::string csv) : ideal_candidate(csv){}
 
   bool suits(applicant appl);
-
   std::string to_csv();
-
   std::string to_string();
-
 };
 
 #endif

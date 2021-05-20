@@ -1,15 +1,15 @@
 #include "employer.h"
-employer::employer(applicant::city city_, int min_salary, int max_year_of_birth)
+employer::employer(int city_id, int min_salary, int max_year_of_birth)
     : ideal_candidate(
     "",
     "",
     "",
     max_year_of_birth,
-    applicant::NONE,
-    applicant::SINGLE,
-    applicant::BSUIR,
+    0,
+    0,
+    0,
     "88005553535",
-    city_,
+    city_id,
     min_salary
 ){}
 bool employer::suits(applicant appl) {
@@ -22,5 +22,5 @@ std::string employer::to_csv() {
   return ideal_candidate.to_csv();
 }
 std::string employer::to_string() {
-  return std::to_string(ideal_candidate.get_city()) + "\n" + std::to_string(ideal_candidate.get_year_of_birth()) + "\n" + std::to_string(ideal_candidate.min_salary());
+  return ideal_candidate.get_city() + "\n" + std::to_string(ideal_candidate.get_year_of_birth()) + "\n" + std::to_string(ideal_candidate.min_salary());
 }

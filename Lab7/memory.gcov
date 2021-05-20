@@ -1,7 +1,7 @@
         -:    0:Source:/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/memory
         -:    0:Graph:employer.gcno
         -:    0:Data:employer.gcda
-        -:    0:Runs:4
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:// -*- C++ -*-
         -:    2://===-------------------------- memory ------------------------------------===//
@@ -990,14 +990,14 @@
         -:  985:    struct __nat {};
         -:  986:public:
         -:  987:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX17
-function _ZNSt3__114pointer_traitsIPKcE10pointer_toERS1_ called 122 returned 100% blocks executed 100%
-      122:  988:    static pointer pointer_to(typename conditional<is_void<element_type>::value,
-      122:  988-block  0
-unconditional  0 taken 122
+function _ZNSt3__114pointer_traitsIPKcE10pointer_toERS1_ called 0 returned 0% blocks executed 0%
+    #####:  988:    static pointer pointer_to(typename conditional<is_void<element_type>::value,
+    $$$$$:  988-block  0
+unconditional  0 never executed
         -:  989:                                      __nat, element_type>::type& __r) _NOEXCEPT
-      122:  990:        {return _VSTD::addressof(__r);}
-      122:  990-block  0
-unconditional  0 taken 122
+    #####:  990:        {return _VSTD::addressof(__r);}
+    $$$$$:  990-block  0
+unconditional  0 never executed
         -:  991:};
         -:  992:
         -:  993:template <class _From, class _To>
@@ -1113,14 +1113,14 @@ unconditional  0 taken 122
         -: 1103:template <class _Tp>
         -: 1104:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
         -: 1105:_Tp*
-function _ZNSt3__1L16__to_raw_pointerIKcEEPT_S3_ called 192 returned 100% blocks executed 100%
-      192: 1106:__to_raw_pointer(_Tp* __p) _NOEXCEPT
-      192: 1106-block  0
-unconditional  0 taken 192
+function _ZNSt3__1L16__to_raw_pointerIKcEEPT_S3_ called 0 returned 0% blocks executed 0%
+    #####: 1106:__to_raw_pointer(_Tp* __p) _NOEXCEPT
+    $$$$$: 1106-block  0
+unconditional  0 never executed
         -: 1107:{
-      192: 1108:    return __p;
-      192: 1108-block  0
-unconditional  0 taken 192
+    #####: 1108:    return __p;
+    $$$$$: 1108-block  0
+unconditional  0 never executed
         -: 1109:}
         -: 1110:
         -: 1111:#if _LIBCPP_STD_VER <= 17
@@ -2157,7 +2157,12 @@ unconditional  1 never executed
         -: 2137:  typedef const _Tp& const_reference;
         -: 2138:
         -: 2139:#ifndef _LIBCPP_CXX03_LANG
-        -: 2140:  _LIBCPP_INLINE_VISIBILITY constexpr __compressed_pair_elem() : __value_() {}
+function _ZNSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EEC2Ev called 0 returned 0% blocks executed 0%
+    #####: 2140:  _LIBCPP_INLINE_VISIBILITY constexpr __compressed_pair_elem() : __value_() {}
+    $$$$$: 2140-block  0
+unconditional  0 never executed
+    $$$$$: 2140-block  1
+unconditional  1 never executed
         -: 2141:
         -: 2142:  template <class _Up, class = typename enable_if<
         -: 2143:      !is_same<__compressed_pair_elem, typename decay<_Up>::type>::value
@@ -2175,29 +2180,24 @@ unconditional  1 never executed
         -: 2155:                         __tuple_indices<_Indexes...>)
         -: 2156:      : __value_(_VSTD::forward<_Args>(_VSTD::get<_Indexes>(__args))...) {}
         -: 2157:#else
-function _ZNSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EEC2Ev called 96 returned 100% blocks executed 100%
-       96: 2158:  _LIBCPP_INLINE_VISIBILITY __compressed_pair_elem() : __value_() {}
-       96: 2158-block  0
-unconditional  0 taken 96
-       96: 2158-block  1
-unconditional  1 taken 96
+        -: 2158:  _LIBCPP_INLINE_VISIBILITY __compressed_pair_elem() : __value_() {}
         -: 2159:  _LIBCPP_INLINE_VISIBILITY
         -: 2160:  __compressed_pair_elem(_ParamT __p) : __value_(std::forward<_ParamT>(__p)) {}
         -: 2161:#endif
         -: 2162:
-function _ZNSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EE5__getEv called 96 returned 100% blocks executed 100%
-       96: 2163:  _LIBCPP_INLINE_VISIBILITY reference __get() _NOEXCEPT { return __value_; }
-       96: 2163-block  0
-unconditional  0 taken 96
-       96: 2163-block  1
-unconditional  1 taken 96
+function _ZNSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EE5__getEv called 0 returned 0% blocks executed 0%
+    #####: 2163:  _LIBCPP_INLINE_VISIBILITY reference __get() _NOEXCEPT { return __value_; }
+    $$$$$: 2163-block  0
+unconditional  0 never executed
+    $$$$$: 2163-block  1
+unconditional  1 never executed
         -: 2164:  _LIBCPP_INLINE_VISIBILITY
-function _ZNKSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EE5__getEv called 768 returned 100% blocks executed 100%
-      768: 2165:  const_reference __get() const _NOEXCEPT { return __value_; }
-      768: 2165-block  0
-unconditional  0 taken 768
-      768: 2165-block  1
-unconditional  1 taken 768
+function _ZNKSt3__122__compressed_pair_elemINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repELi0ELb0EE5__getEv called 0 returned 0% blocks executed 0%
+    #####: 2165:  const_reference __get() const _NOEXCEPT { return __value_; }
+    $$$$$: 2165-block  0
+unconditional  0 never executed
+    $$$$$: 2165-block  1
+unconditional  1 never executed
         -: 2166:
         -: 2167:private:
         -: 2168:  _Tp __value_;
@@ -2211,7 +2211,12 @@ unconditional  1 taken 768
         -: 2176:  typedef _Tp __value_type;
         -: 2177:
         -: 2178:#ifndef _LIBCPP_CXX03_LANG
-        -: 2179:  _LIBCPP_INLINE_VISIBILITY constexpr __compressed_pair_elem() = default;
+function _ZNSt3__122__compressed_pair_elemINS_9allocatorIcEELi1ELb1EEC2Ev called 0 returned 0% blocks executed 0%
+    #####: 2179:  _LIBCPP_INLINE_VISIBILITY constexpr __compressed_pair_elem() = default;
+    $$$$$: 2179-block  0
+unconditional  0 never executed
+    $$$$$: 2179-block  1
+unconditional  1 never executed
         -: 2180:
         -: 2181:  template <class _Up, class = typename enable_if<
         -: 2182:        !is_same<__compressed_pair_elem, typename decay<_Up>::type>::value
@@ -2228,30 +2233,15 @@ unconditional  1 taken 768
         -: 2193:                         __tuple_indices<_Indexes...>)
         -: 2194:      : __value_type(_VSTD::forward<_Args>(_VSTD::get<_Indexes>(__args))...) {}
         -: 2195:#else
-function _ZNSt3__122__compressed_pair_elemINS_9allocatorIcEELi1ELb1EEC2Ev called 0 returned 0% blocks executed 0%
-    #####: 2196:  _LIBCPP_INLINE_VISIBILITY __compressed_pair_elem() : __value_type() {}
-    $$$$$: 2196-block  0
-unconditional  0 never executed
-    $$$$$: 2196-block  1
-unconditional  1 never executed
+        -: 2196:  _LIBCPP_INLINE_VISIBILITY __compressed_pair_elem() : __value_type() {}
         -: 2197:  _LIBCPP_INLINE_VISIBILITY
-function _ZNSt3__122__compressed_pair_elemINS_9allocatorIcEELi1ELb1EEC2ES2_ called 96 returned 100% blocks executed 100%
-       96: 2198:  __compressed_pair_elem(_ParamT __p)
-       96: 2198-block  0
-unconditional  0 taken 96
-       96: 2199:      : __value_type(std::forward<_ParamT>(__p)) {}
-       96: 2199-block  0
-unconditional  0 taken 96
+        -: 2198:  __compressed_pair_elem(_ParamT __p)
+        -: 2199:      : __value_type(std::forward<_ParamT>(__p)) {}
         -: 2200:#endif
         -: 2201:
         -: 2202:  _LIBCPP_INLINE_VISIBILITY reference __get() _NOEXCEPT { return *this; }
         -: 2203:  _LIBCPP_INLINE_VISIBILITY
-function _ZNKSt3__122__compressed_pair_elemINS_9allocatorIcEELi1ELb1EE5__getEv called 96 returned 100% blocks executed 100%
-       96: 2204:  const_reference __get() const _NOEXCEPT { return *this; }
-       96: 2204-block  0
-unconditional  0 taken 96
-       96: 2204-block  1
-unconditional  1 taken 96
+        -: 2204:  const_reference __get() const _NOEXCEPT { return *this; }
         -: 2205:};
         -: 2206:
         -: 2207:// Tag used to construct the second element of the compressed pair.
@@ -2281,7 +2271,17 @@ unconditional  1 taken 96
         -: 2231:      >::type
         -: 2232:  >
         -: 2233:  _LIBCPP_INLINE_VISIBILITY
-        -: 2234:  constexpr __compressed_pair() {}
+function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC1ILb1EvEEv called 0 returned 0% blocks executed 0%
+function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC2ILb1EvEEv called 0 returned 0% blocks executed 0%
+    #####: 2234:  constexpr __compressed_pair() {}
+    $$$$$: 2234-block  0
+unconditional  0 never executed
+    $$$$$: 2234-block  1
+unconditional  1 never executed
+    $$$$$: 2234-block  2
+unconditional  2 never executed
+    $$$$$: 2234-block  3
+unconditional  3 never executed
         -: 2235:
         -: 2236:  template <class _Tp, typename enable_if<!is_same<typename decay<_Tp>::type,
         -: 2237:                                                   __compressed_pair>::value,
@@ -2311,34 +2311,14 @@ unconditional  1 taken 96
         -: 2261:
         -: 2262:#else
         -: 2263:  _LIBCPP_INLINE_VISIBILITY
-function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC1Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC2Ev called 0 returned 0% blocks executed 0%
-    #####: 2264:  __compressed_pair() {}
-    $$$$$: 2264-block  0
-unconditional  0 never executed
-    $$$$$: 2264-block  1
-unconditional  1 never executed
-    $$$$$: 2264-block  2
-unconditional  2 never executed
-    $$$$$: 2264-block  3
-unconditional  3 never executed
+        -: 2264:  __compressed_pair() {}
         -: 2265:
         -: 2266:  _LIBCPP_INLINE_VISIBILITY explicit
         -: 2267:  __compressed_pair(_T1 __t1) : _Base1(_VSTD::forward<_T1>(__t1)) {}
         -: 2268:
         -: 2269:  _LIBCPP_INLINE_VISIBILITY
-function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC1ENS_12__second_tagES5_ called 96 returned 100% blocks executed 100%
-function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_EC2ENS_12__second_tagES5_ called 96 returned 100% blocks executed 100%
-      192: 2270:  __compressed_pair(__second_tag, _T2 __t2)
-       96: 2270-block  0
-unconditional  0 taken 96
-       96: 2270-block  1
-unconditional  1 taken 96
-      192: 2271:      : _Base1(), _Base2(_VSTD::forward<_T2>(__t2)) {}
-       96: 2271-block  0
-unconditional  0 taken 96
-       96: 2271-block  1
-unconditional  1 taken 96
+        -: 2270:  __compressed_pair(__second_tag, _T2 __t2)
+        -: 2271:      : _Base1(), _Base2(_VSTD::forward<_T2>(__t2)) {}
         -: 2272:
         -: 2273:  _LIBCPP_INLINE_VISIBILITY
         -: 2274:  __compressed_pair(_T1 __t1, _T2 __t2)
@@ -2346,23 +2326,23 @@ unconditional  1 taken 96
         -: 2276:#endif
         -: 2277:
         -: 2278:  _LIBCPP_INLINE_VISIBILITY
-function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_E5firstEv called 96 returned 100% blocks executed 100%
-       96: 2279:  typename _Base1::reference first() _NOEXCEPT {
-       96: 2279-block  0
-unconditional  0 taken 96
-       96: 2280:    return static_cast<_Base1&>(*this).__get();
-       96: 2280-block  0
-unconditional  0 taken 96
+function _ZNSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_E5firstEv called 0 returned 0% blocks executed 0%
+    #####: 2279:  typename _Base1::reference first() _NOEXCEPT {
+    $$$$$: 2279-block  0
+unconditional  0 never executed
+    #####: 2280:    return static_cast<_Base1&>(*this).__get();
+    $$$$$: 2280-block  0
+unconditional  0 never executed
         -: 2281:  }
         -: 2282:
         -: 2283:  _LIBCPP_INLINE_VISIBILITY
-function _ZNKSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_E5firstEv called 768 returned 100% blocks executed 100%
-      768: 2284:  typename _Base1::const_reference first() const _NOEXCEPT {
-      768: 2284-block  0
-unconditional  0 taken 768
-      768: 2285:    return static_cast<_Base1 const&>(*this).__get();
-      768: 2285-block  0
-unconditional  0 taken 768
+function _ZNKSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_E5firstEv called 0 returned 0% blocks executed 0%
+    #####: 2284:  typename _Base1::const_reference first() const _NOEXCEPT {
+    $$$$$: 2284-block  0
+unconditional  0 never executed
+    #####: 2285:    return static_cast<_Base1 const&>(*this).__get();
+    $$$$$: 2285-block  0
+unconditional  0 never executed
         -: 2286:  }
         -: 2287:
         -: 2288:  _LIBCPP_INLINE_VISIBILITY
@@ -2371,13 +2351,8 @@ unconditional  0 taken 768
         -: 2291:  }
         -: 2292:
         -: 2293:  _LIBCPP_INLINE_VISIBILITY
-function _ZNKSt3__117__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES5_E6secondEv called 96 returned 100% blocks executed 100%
-       96: 2294:  typename _Base2::const_reference second() const _NOEXCEPT {
-       96: 2294-block  0
-unconditional  0 taken 96
-       96: 2295:    return static_cast<_Base2 const&>(*this).__get();
-       96: 2295-block  0
-unconditional  0 taken 96
+        -: 2294:  typename _Base2::const_reference second() const _NOEXCEPT {
+        -: 2295:    return static_cast<_Base2 const&>(*this).__get();
         -: 2296:  }
         -: 2297:
         -: 2298:  _LIBCPP_INLINE_VISIBILITY

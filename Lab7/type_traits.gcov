@@ -1,7 +1,7 @@
         -:    0:Source:/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/type_traits
         -:    0:Graph:employer.gcno
         -:    0:Data:employer.gcda
-        -:    0:Runs:4
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:// -*- C++ -*-
         -:    2://===------------------------ type_traits ---------------------------------===//
@@ -456,14 +456,14 @@
         -:  451:inline _LIBCPP_CONSTEXPR_AFTER_CXX14
         -:  452:_LIBCPP_NO_CFI _LIBCPP_INLINE_VISIBILITY
         -:  453:_Tp*
-function _ZNSt3__1L9addressofIKcEEPT_RS2_ called 122 returned 100% blocks executed 100%
-      122:  454:addressof(_Tp& __x) _NOEXCEPT
-      122:  454-block  0
-unconditional  0 taken 122
+function _ZNSt3__1L9addressofIKcEEPT_RS2_ called 0 returned 0% blocks executed 0%
+    #####:  454:addressof(_Tp& __x) _NOEXCEPT
+    $$$$$:  454-block  0
+unconditional  0 never executed
         -:  455:{
-      122:  456:    return __builtin_addressof(__x);
-      122:  456-block  0
-unconditional  0 taken 122
+    #####:  456:    return __builtin_addressof(__x);
+    $$$$$:  456-block  0
+unconditional  0 never executed
         -:  457:}
         -:  458:
         -:  459:#else
@@ -2317,10 +2317,20 @@ unconditional  0 taken 122
         -: 2307:template <class _Tp>
         -: 2308:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR
         -: 2309:typename remove_reference<_Tp>::type&&
-        -: 2310:move(_Tp&& __t) _NOEXCEPT
+function _ZNSt3__1L4moveIRNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEONS_16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
+function _ZNSt3__1L4moveIRNS_17__compressed_pairINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5__repES6_EEEEONS_16remove_referenceIT_E4typeEOSC_ called 0 returned 0% blocks executed 0%
+    #####: 2310:move(_Tp&& __t) _NOEXCEPT
+    $$$$$: 2310-block  0
+unconditional  0 never executed
+    $$$$$: 2310-block  1
+unconditional  1 never executed
         -: 2311:{
         -: 2312:    typedef typename remove_reference<_Tp>::type _Up;
-        -: 2313:    return static_cast<_Up&&>(__t);
+    #####: 2313:    return static_cast<_Up&&>(__t);
+    $$$$$: 2313-block  0
+unconditional  0 never executed
+    $$$$$: 2313-block  1
+unconditional  1 never executed
         -: 2314:}
         -: 2315:
         -: 2316:template <class _Tp>
@@ -2362,14 +2372,9 @@ unconditional  0 taken 122
         -: 2352:template <class _Tp>
         -: 2353:inline _LIBCPP_INLINE_VISIBILITY
         -: 2354:_Tp&
-function _ZNSt3__1L7forwardINS_9allocatorIcEEEERT_RNS_16remove_referenceIS3_E4typeE called 192 returned 100% blocks executed 100%
-      192: 2355:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
-      192: 2355-block  0
-unconditional  0 taken 192
+        -: 2355:forward(typename remove_reference<_Tp>::type& __t) _NOEXCEPT
         -: 2356:{
-      192: 2357:    return __t;
-      192: 2357-block  0
-unconditional  0 taken 192
+        -: 2357:    return __t;
         -: 2358:}
         -: 2359:
         -: 2360:
