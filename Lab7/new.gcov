@@ -225,10 +225,10 @@
         -:  220:#endif
         -:  221:}
         -:  222:
-function _ZNSt3__1L17__libcpp_allocateEmm called 8 returned 100% blocks executed 100%
-        8:  223:inline _LIBCPP_INLINE_VISIBILITY void *__libcpp_allocate(size_t __size, size_t __align) {
-        8:  223-block  0
-unconditional  0 taken 8
+function _ZNSt3__1L17__libcpp_allocateEmm called 0 returned 0% blocks executed 0%
+    #####:  223:inline _LIBCPP_INLINE_VISIBILITY void *__libcpp_allocate(size_t __size, size_t __align) {
+    $$$$$:  223-block  0
+unconditional  0 never executed
         -:  224:#ifndef _LIBCPP_HAS_NO_ALIGNED_ALLOCATION
         -:  225:  if (__is_overaligned_for_new(__align)) {
         -:  226:    const align_val_t __align_val = static_cast<align_val_t>(__align);
@@ -244,9 +244,9 @@ unconditional  0 taken 8
         -:  236:#ifdef _LIBCPP_HAS_NO_BUILTIN_OPERATOR_NEW_DELETE
         -:  237:  return ::operator new(__size);
         -:  238:#else
-        8:  239:  return __builtin_operator_new(__size);
-        8:  239-block  0
-unconditional  0 taken 8
+    #####:  239:  return __builtin_operator_new(__size);
+    $$$$$:  239-block  0
+unconditional  0 never executed
         -:  240:#endif
         -:  241:}
         -:  242:

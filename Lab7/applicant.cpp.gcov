@@ -4,28 +4,28 @@
         -:    0:Runs:1
         -:    0:Programs:1
         -:    1:#include "applicant.h"
-function _ZN9applicantC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_iiiiS6_ii called 1 returned 100% blocks executed 58%
-function _ZN9applicantC1ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_iiiiS6_ii called 1 returned 100% blocks executed 100%
-        3:    2:applicant::applicant(std::string first_name,
-        1:    2-block  0
-unconditional  0 taken 1
-        1:    2-block  1
-unconditional  1 taken 1
+function _ZN9applicantC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_iiiiS6_ii called 2 returned 100% blocks executed 58%
+function _ZN9applicantC1ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_S6_iiiiS6_ii called 2 returned 100% blocks executed 100%
+        6:    2:applicant::applicant(std::string first_name,
+        2:    2-block  0
+unconditional  0 taken 2
+        2:    2-block  1
+unconditional  1 taken 2
         -:    3:                     std::string second_name,
         -:    4:                     std::string third_name,
         -:    5:                     int year_of_birth,
         -:    6:                     int gend,
         -:    7:                     int status,
         -:    8:                     int univ,
-       22:    9:                     std::string mobile_phone,
-        1:    9-block  0
-branch  0 taken 1
+       33:    9:                     std::string mobile_phone,
+        2:    9-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:    9-block  1
-unconditional  2 taken 1
-       11:    9-block  2
-branch  3 taken 10
-branch  4 taken 1
+        2:    9-block  1
+unconditional  2 taken 2
+       22:    9-block  2
+branch  3 taken 20
+branch  4 taken 2
     $$$$$:    9-block  3
 branch  5 never executed
 branch  6 never executed
@@ -66,107 +66,107 @@ branch 26 never executed
     $$$$$:    9-block 18
 unconditional 27 never executed
     $$$$$:    9-block 19
-        2:   10:                     int city_,
-        1:   10-block  0
-branch  0 taken 1
+        3:   10:                     int city_,
+        2:   10-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   10-block  1
 branch  2 taken 1
 branch  3 taken 0
-        3:   11:                     int min_salary) {
-        1:   11-block  0
-branch  0 taken 1
+        5:   11:                     int min_salary) {
+        2:   11-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   11-block  1
 branch  2 taken 1
 branch  3 taken 0
-        3:   12:  _first_name = first_name;
-        1:   12-block  0
-branch  0 taken 1
+        5:   12:  _first_name = first_name;
+        2:   12-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:   12-block  1
-branch  2 taken 1
+        2:   12-block  1
+branch  2 taken 2
 branch  3 taken 0
         1:   12-block  2
 branch  4 taken 1
 branch  5 taken 0
-        3:   13:  _second_name = second_name;
-        1:   13-block  0
-branch  0 taken 1
+        5:   13:  _second_name = second_name;
+        2:   13-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:   13-block  1
-branch  2 taken 1
+        2:   13-block  1
+branch  2 taken 2
 branch  3 taken 0
         1:   13-block  2
 branch  4 taken 1
 branch  5 taken 0
-        3:   14:  _third_name = third_name;
-        1:   14-block  0
-branch  0 taken 1
+        5:   14:  _third_name = third_name;
+        2:   14-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:   14-block  1
-branch  2 taken 1
+        2:   14-block  1
+branch  2 taken 2
 branch  3 taken 0
         1:   14-block  2
 branch  4 taken 1
 branch  5 taken 0
-        3:   15:  _year_of_birth = year_of_birth;
-        1:   15-block  0
-branch  0 taken 1
+        5:   15:  _year_of_birth = year_of_birth;
+        2:   15-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   15-block  1
 branch  2 taken 1
 branch  3 taken 0
-        3:   16:  _gender = gend;
-        1:   16-block  0
-branch  0 taken 1
+        5:   16:  _gender = gend;
+        2:   16-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   16-block  1
 branch  2 taken 1
 branch  3 taken 0
-        3:   17:  _marital_status = status;
-        1:   17-block  0
-branch  0 taken 1
+        5:   17:  _marital_status = status;
+        2:   17-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   17-block  1
 branch  2 taken 1
 branch  3 taken 0
-        3:   18:  _university = univ;
-        1:   18-block  0
-branch  0 taken 1
+        5:   18:  _university = univ;
+        2:   18-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   18-block  1
 branch  2 taken 1
 branch  3 taken 0
-        3:   19:  _mobile_phone = mobile_phone;
-        1:   19-block  0
-branch  0 taken 1
+        5:   19:  _mobile_phone = mobile_phone;
+        2:   19-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:   19-block  1
-branch  2 taken 1
+        2:   19-block  1
+branch  2 taken 2
 branch  3 taken 0
         1:   19-block  2
 branch  4 taken 1
 branch  5 taken 0
-        3:   20:  _city = city_;
-        1:   20-block  0
-branch  0 taken 1
+        5:   20:  _city = city_;
+        2:   20-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   20-block  1
 branch  2 taken 1
 branch  3 taken 0
-        1:   21:  _min_salary = min_salary;
-       10:   22:}
-        1:   22-block  0
-branch  0 taken 1
+        2:   21:  _min_salary = min_salary;
+       16:   22:}
+        2:   22-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:   22-block  1
-unconditional  2 taken 1
-        4:   22-block  2
-branch  3 taken 3
-branch  4 taken 1
-        1:   22-block  3
-unconditional  5 taken 1
+        2:   22-block  1
+unconditional  2 taken 2
+        8:   22-block  2
+branch  3 taken 6
+branch  4 taken 2
+        2:   22-block  3
+unconditional  5 taken 2
     $$$$$:   22-block  4
 branch  6 never executed
 branch  7 never executed
@@ -190,8 +190,8 @@ unconditional 16 never executed
 unconditional 17 never executed
     $$$$$:   22-block 13
 unconditional 18 never executed
-        1:   22-block 14
-unconditional 19 taken 1
+        2:   22-block 14
+unconditional 19 taken 2
         1:   22-block 15
 branch 20 taken 1
 branch 21 taken 0
@@ -215,18 +215,18 @@ branch 31 never executed
 branch 32 never executed
     $$$$$:   22-block 23
 unconditional 33 never executed
-        2:   23:
-        1:   23-block  0
-branch  0 taken 1
+        3:   23:
+        2:   23-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   23-block  1
 branch  2 taken 1
 branch  3 taken 0
 function _ZN9applicantC2ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE called 1 returned 100% blocks executed 66%
 function _ZN9applicantC1ENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE called 1 returned 100% blocks executed 100%
-        5:   24:applicant::applicant(std::string csv) {
-        1:   24-block  0
-branch  0 taken 1
+        6:   24:applicant::applicant(std::string csv) {
+        2:   24-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   24-block  1
 unconditional  2 taken 1
@@ -235,9 +235,9 @@ branch  3 taken 1
 branch  4 taken 0
         1:   24-block  3
 unconditional  5 taken 1
-       12:   25:  std::string strs[10];
-        1:   25-block  0
-branch  0 taken 1
+       13:   25:  std::string strs[10];
+        2:   25-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   25-block  1
 branch  2 taken 1
@@ -247,9 +247,9 @@ unconditional  4 taken 1
        10:   25-block  3
 branch  5 taken 9
 branch  6 taken 1
-        3:   26:  csv.push_back(',');
-        1:   26-block  0
-branch  0 taken 1
+        4:   26:  csv.push_back(',');
+        2:   26-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   26-block  1
 branch  2 taken 1
@@ -258,15 +258,15 @@ branch  3 taken 0
 branch  4 taken 1
 branch  5 taken 0
         1:   27:  int j = 0;
-       15:   28:  for (int i = 0; i < 10; i++) {
-        1:   28-block  0
-branch  0 taken 1
+       17:   28:  for (int i = 0; i < 10; i++) {
+        2:   28-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:   28-block  1
-unconditional  2 taken 1
-        2:   28-block  2
-branch  3 taken 1
-branch  4 taken 1
+        2:   28-block  1
+unconditional  2 taken 2
+        4:   28-block  2
+branch  3 taken 2
+branch  4 taken 2
     $$$$$:   28-block  3
 branch  5 never executed
 branch  6 never executed
@@ -312,9 +312,9 @@ branch 29 never executed
 unconditional 30 never executed
        10:   28-block 20
 unconditional 31 taken 10
-       60:   29:    while (j < csv.size() && csv[j] != ',') {
-        1:   29-block  0
-branch  0 taken 1
+       61:   29:    while (j < csv.size() && csv[j] != ',') {
+        2:   29-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   29-block  1
 branch  2 taken 1
@@ -331,9 +331,9 @@ branch  8 taken 48
 branch  9 taken 10
        48:   29-block  6
 unconditional 10 taken 48
-       50:   30:      strs[i].push_back(csv[j]);
-        1:   30-block  0
-branch  0 taken 1
+       51:   30:      strs[i].push_back(csv[j]);
+        2:   30-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   30-block  1
 branch  2 taken 1
@@ -342,15 +342,15 @@ branch  3 taken 0
 branch  4 taken 48
 branch  5 taken 0
        48:   31:      j++;
-       12:   32:    }
-        1:   32-block  0
-branch  0 taken 1
+       18:   32:    }
+        2:   32-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1:   32-block  1
-unconditional  2 taken 1
-        6:   32-block  2
-branch  3 taken 5
-branch  4 taken 1
+        2:   32-block  1
+unconditional  2 taken 2
+       12:   32-block  2
+branch  3 taken 10
+branch  4 taken 2
     $$$$$:   32-block  3
 branch  5 never executed
 branch  6 never executed
@@ -389,32 +389,32 @@ branch 25 never executed
 branch 26 never executed
     $$$$$:   32-block 17
 unconditional 27 never executed
-       12:   33:    j++;
-        1:   33-block  0
-branch  0 taken 1
+       13:   33:    j++;
+        2:   33-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   33-block  1
 branch  2 taken 1
 branch  3 taken 0
-       12:   34:  }
-        1:   34-block  0
-branch  0 taken 1
+       13:   34:  }
+        2:   34-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   34-block  1
 branch  2 taken 1
 branch  3 taken 0
        10:   34-block  2
 unconditional  4 taken 10
-        2:   35:
-        1:   35-block  0
-branch  0 taken 1
+        3:   35:
+        2:   35-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   35-block  1
 branch  2 taken 1
 branch  3 taken 0
-        3:   36:  _first_name = strs[0];
-        1:   36-block  0
-branch  0 taken 1
+        4:   36:  _first_name = strs[0];
+        2:   36-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   36-block  1
 branch  2 taken 1
@@ -422,9 +422,9 @@ branch  3 taken 0
         1:   36-block  2
 branch  4 taken 0
 branch  5 taken 1
-        3:   37:  _second_name = strs[1];
-        1:   37-block  0
-branch  0 taken 1
+        4:   37:  _second_name = strs[1];
+        2:   37-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   37-block  1
 branch  2 taken 1
@@ -432,9 +432,9 @@ branch  3 taken 0
         1:   37-block  2
 branch  4 taken 0
 branch  5 taken 1
-        3:   38:  _third_name = strs[2];
-        1:   38-block  0
-branch  0 taken 1
+        4:   38:  _third_name = strs[2];
+        2:   38-block  0
+branch  0 taken 2
 branch  1 taken 0
         1:   38-block  1
 branch  2 taken 1
@@ -857,13 +857,13 @@ unconditional  0 taken 2
         2:   79-block  0
 unconditional  0 taken 2
         -:   80:}
-function _ZN9applicant8get_cityEv called 2 returned 100% blocks executed 100%
-        2:   81:std::string applicant::get_city() {
-        2:   81-block  0
-unconditional  0 taken 2
-        2:   82:  return city[_city];
-        2:   82-block  0
-unconditional  0 taken 2
+function _ZN9applicant8get_cityEv called 4 returned 100% blocks executed 100%
+        4:   81:std::string applicant::get_city() {
+        4:   81-block  0
+unconditional  0 taken 4
+        4:   82:  return city[_city];
+        4:   82-block  0
+unconditional  0 taken 4
         -:   83:}
 function _ZN9applicant10min_salaryEv called 2 returned 100% blocks executed 100%
         2:   84:int applicant::min_salary() {

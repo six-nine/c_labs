@@ -718,12 +718,12 @@
         -:  713:struct __less<_T1, _T1>
         -:  714:{
         -:  715:    _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
-function _ZNKSt3__16__lessImmEclERKmS3_ called 8 returned 100% blocks executed 100%
-        8:  716:    bool operator()(const _T1& __x, const _T1& __y) const {return __x < __y;}
-        8:  716-block  0
-unconditional  0 taken 8
-        8:  716-block  1
-unconditional  1 taken 8
+function _ZNKSt3__16__lessImmEclERKmS3_ called 0 returned 0% blocks executed 0%
+    #####:  716:    bool operator()(const _T1& __x, const _T1& __y) const {return __x < __y;}
+    $$$$$:  716-block  0
+unconditional  0 never executed
+    $$$$$:  716-block  1
+unconditional  1 never executed
         -:  717:};
         -:  718:
         -:  719:template <class _T1>
@@ -2461,34 +2461,34 @@ unconditional  1 taken 8
         -: 2451:template <class _Tp, class _Compare>
         -: 2452:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
         -: 2453:const _Tp&
-function _ZNSt3__1L3minImNS_6__lessImmEEEERKT_S5_S5_T0_ called 8 returned 100% blocks executed 80%
-        8: 2454:min(const _Tp& __a, const _Tp& __b, _Compare __comp)
-        8: 2454-block  0
-unconditional  0 taken 8
+function _ZNSt3__1L3minImNS_6__lessImmEEEERKT_S5_S5_T0_ called 0 returned 0% blocks executed 0%
+    #####: 2454:min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+    $$$$$: 2454-block  0
+unconditional  0 never executed
         -: 2455:{
-        8: 2456:    return __comp(__b, __a) ? __b : __a;
-        8: 2456-block  0
-branch  0 taken 0
-branch  1 taken 8
+    #####: 2456:    return __comp(__b, __a) ? __b : __a;
+    $$$$$: 2456-block  0
+branch  0 never executed
+branch  1 never executed
     $$$$$: 2456-block  1
 unconditional  2 never executed
-        8: 2456-block  2
-unconditional  3 taken 8
-        8: 2456-block  3
-unconditional  4 taken 8
+    $$$$$: 2456-block  2
+unconditional  3 never executed
+    $$$$$: 2456-block  3
+unconditional  4 never executed
         -: 2457:}
         -: 2458:
         -: 2459:template <class _Tp>
         -: 2460:inline _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_AFTER_CXX11
         -: 2461:const _Tp&
-function _ZNSt3__1L3minImEERKT_S3_S3_ called 8 returned 100% blocks executed 100%
-        8: 2462:min(const _Tp& __a, const _Tp& __b)
-        8: 2462-block  0
-unconditional  0 taken 8
+function _ZNSt3__1L3minImEERKT_S3_S3_ called 0 returned 0% blocks executed 0%
+    #####: 2462:min(const _Tp& __a, const _Tp& __b)
+    $$$$$: 2462-block  0
+unconditional  0 never executed
         -: 2463:{
-        8: 2464:    return _VSTD::min(__a, __b, __less<_Tp>());
-        8: 2464-block  0
-unconditional  0 taken 8
+    #####: 2464:    return _VSTD::min(__a, __b, __less<_Tp>());
+    $$$$$: 2464-block  0
+unconditional  0 never executed
         -: 2465:}
         -: 2466:
         -: 2467:#ifndef _LIBCPP_CXX03_LANG

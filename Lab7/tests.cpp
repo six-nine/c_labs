@@ -17,5 +17,9 @@ int main(){
   assert(app1.min_salary() == app_from_csv.min_salary());
   assert(app1.to_string() == app_from_csv.to_string());
   assert(app1.to_csv() == "Ivanov,Ivan,Ivanovich,2010,1,0,0,73673682361742687,3,1600");
+
+  employer emp(2, 2002, 2000);
+  assert(emp.suits(app1) == false);
+
   return 0;
 }
