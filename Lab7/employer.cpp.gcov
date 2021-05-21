@@ -73,7 +73,7 @@ branch  1 taken 0
         1:   17-block  1
 branch  2 taken 0
 branch  3 taken 1
-    #####:   18:          appl.min_salary() <= ideal_candidate.min_salary() &&
+    #####:   18:      appl.min_salary() <= ideal_candidate.min_salary() &&
     $$$$$:   18-block  0
 branch  0 never executed
 branch  1 never executed
@@ -83,7 +83,7 @@ branch  3 never executed
     $$$$$:   18-block  2
 branch  4 never executed
 branch  5 never executed
-    #####:   19:          appl.get_year_of_birth() <= ideal_candidate.get_year_of_birth();
+    #####:   19:      appl.get_year_of_birth() <= ideal_candidate.get_year_of_birth();
     $$$$$:   19-block  0
 branch  0 never executed
 branch  1 never executed
