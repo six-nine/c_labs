@@ -8,3 +8,6 @@ script
 #clion files
 /*/CMakeLists.txt
 /*/cmake-build-debug
+
+#coverage
+/*/*.gcov
