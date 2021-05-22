@@ -11,3 +11,4 @@ script
 
 #coverage
 /*/*.gcov
+/*/*.gcda
