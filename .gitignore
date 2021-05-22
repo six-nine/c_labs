@@ -8,7 +8,9 @@ script
 #clion files
 /*/CMakeLists.txt
 /*/cmake-build-debug
+/*/.idea/
 
 #coverage
 /*/*.gcov
 /*/*.gcda
+/*/*.gcno
