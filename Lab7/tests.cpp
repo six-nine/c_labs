@@ -20,6 +20,11 @@ int main(){
 
   employer emp(2, 2002, 2000);
   assert(emp.suits(app1) == false);
-
+  database_helper db("test_db.csv");
+  db.add_record(app1.to_csv());
+  db.add_record(app_from_csv.to_csv());
+  db.add_record(emp.to_csv());
+  db.erase_record(1);
+  assert(db.get_vector_of_records().size() == 2);
   return 0;
 }
